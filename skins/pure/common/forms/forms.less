@@ -60,28 +60,28 @@ label {
 // Forms-extend
 // ==========================================================================
 
-.forms-prepend,
-.forms-append {
+.form-prepend,
+.form-append {
 	letter-spacing: -4px;
 
-	.forms_prepend,
-	.forms_append {
+	.form_prepend,
+	.form_append {
 		.inline-block();
 		height: 2em;
 		padding: 0.3em 0.6em;
 		font-weight: bold;
-		border: 1px solid @input-decorate-borderColor;
-		background: @input-decorate-bgColor;
+		// border: 1px solid @input-decorate-borderColor;
+		// background: @input-decorate-bgColor;
 		text-align: center;
 		vertical-align: top;	
 		letter-spacing: normal;	
 		.box-sizing(border-box);
 	}
 
-	.forms_prepend {
+	.form_prepend {
 		.px-to-rem("margin-right",-2);
 	}
-	.forms_append {
+	.form_append {
 		.px-to-rem("margin-left",-2);
 	}
 }
@@ -148,13 +148,13 @@ label {
 }
 
 
-input.forms_success,
-textarea.forms_success,
-select.forms_success {
+input.form_success,
+textarea.form_success,
+select.form_success {
 	// border-color: @input-success-borderColor;
 }
 
-input.forms_disabled {
+input.form_disabled {
 	color: #cad2d3;
 	background-color: #eaeded;
 	border-color: transparent;
@@ -166,9 +166,9 @@ textarea:focus {
 	border-color: #129fea;
 }
 
-input.forms_error,
-textarea.forms_error,
-select.forms_error {
+input.form_error,
+textarea.form_error,
+select.form_error {
 	&:focus {
 		border-color: #e9322d;
 	}
@@ -337,4 +337,12 @@ input[type="button"] {
 }
 .form-u-1 {
 	width: 100%;
+}
+
+.form-checkbox,
+.form-radio {
+	display: block;
+    margin: 0.5em 0;
+    color: #999999;
+    font-size: 90%;
 }

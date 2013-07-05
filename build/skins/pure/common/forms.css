@@ -80,20 +80,18 @@ label {
   display: block;
   letter-spacing: normal;
 }
-.forms-prepend,
-.forms-append {
+.form-prepend,
+.form-append {
   letter-spacing: -4px;
 }
-.forms-prepend .forms_prepend,
-.forms-append .forms_prepend,
-.forms-prepend .forms_append,
-.forms-append .forms_append {
+.form-prepend .form_prepend,
+.form-append .form_prepend,
+.form-prepend .form_append,
+.form-append .form_append {
   display: inline-block;
   height: 2em;
   padding: 0.3em 0.6em;
   font-weight: bold;
-  border: 1px solid #aaaaaa;
-  background: #eeeeee;
   text-align: center;
   vertical-align: top;
   letter-spacing: normal;
@@ -103,10 +101,10 @@ label {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-.ie7 .forms-prepend .forms_prepend,
-.ie7 .forms-append .forms_prepend,
-.ie7 .forms-prepend .forms_append,
-.ie7 .forms-append .forms_append {
+.ie7 .form-prepend .form_prepend,
+.ie7 .form-append .form_prepend,
+.ie7 .form-prepend .form_append,
+.ie7 .form-append .form_append {
   display: inline;
   zoom: 1;
 }
@@ -171,7 +169,7 @@ label {
   margin-bottom: 5.28px;
   margin-bottom: 0.33rem;
 }
-input.forms_disabled {
+input.form_disabled {
   color: #cad2d3;
   background-color: #eaeded;
   border-color: transparent;
@@ -181,9 +179,9 @@ input:focus,
 textarea:focus {
   border-color: #129fea;
 }
-input.forms_error:focus,
-textarea.forms_error:focus,
-select.forms_error:focus {
+input.form_error:focus,
+textarea.form_error:focus,
+select.form_error:focus {
   border-color: #e9322d;
 }
 form fieldset {
@@ -354,4 +352,11 @@ input[type="button"]:active {
 }
 .form-u-1 {
   width: 100%;
+}
+.form-checkbox,
+.form-radio {
+  display: block;
+  margin: 0.5em 0;
+  color: #999999;
+  font-size: 90%;
 }

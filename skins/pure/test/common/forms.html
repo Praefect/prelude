@@ -51,33 +51,33 @@
 
                 <li>
                     <label class="disabled" for="disabledField">Disabled Field</label>
-                    <input type="text" disabled="disabled" class="forms_disabled">
+                    <input type="text" disabled="disabled" class="form_disabled">
                 </li>
 
                 <li>
                     <label class="success" for="textField(Success)">Text Field (Success)</label>
-                    <input type="text" class="forms_success" />
+                    <input type="text" class="form_success" />
                 </li>
 
                 <li>
                     <label class="error" for="textField(Error)">Text Field (Error)</label>
-                    <input type="text" class="forms_error" />
+                    <input type="text" class="form_error" />
                 </li>
 
 
                 <li class="section">Input With a decorate(button,prefix,postfix)</li>
                 <li>
                     <label for="">Input With a prefix</label>
-                    <div class="forms-prepend">
-                        <span class="forms_prepend">#</span>
+                    <div class="form-prepend">
+                        <span class="form_prepend">#</span>
                         <input type="text" />
                     </div>
                 </li>
                 <li>
                     <label for="">Input With a postfix</label>
-                     <div class="forms-append">
+                     <div class="form-append">
                         <input type="text" />
-                        <span class="forms_append">.com</span>
+                        <span class="form_append">.com</span>
                     </div>
                 </li>
 
@@ -313,7 +313,27 @@
             <input type="email" placeholder="Requires an email" required>
         </form>
         <form class="form">
-            <input class="forms-disabled" type="text" placeholder="Disabled input here..." disabled>
+            <input class="form-disabled" type="text" placeholder="Disabled input here..." disabled>
+        </form>
+        <form class="form">
+            <input type="text" class="form-input-rounded">
+            <button type="submit" class="form-button">Search</button>
+        </form>
+        <form class="form">
+            <label for="option-one" class="form-checkbox">
+                <input id="option-one" type="checkbox" value="">
+                Here's option one.
+            </label>
+
+            <label for="option-two" class="form-radio">
+                <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
+                Here's a radio button. You can choose this one..
+            </label>
+
+            <label for="option-three" class="form-radio">
+                <input id="option-three" type="radio" name="optionsRadios" value="option2">
+                ..Or this one!
+            </label>
         </form>
     </div>
 </body>
