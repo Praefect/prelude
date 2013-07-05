@@ -1,0 +1,77 @@
+@import "init.less";
+// ==========================================================================
+// Breadcrumbs Core
+// ==========================================================================
+.breadcrumbs {
+    overflow: hidden;
+    li {
+        .inline-block();
+        list-style: none outside none;
+    }
+    
+    // .is-disabled {
+
+    // }
+
+    .is-current {
+        cursor: default;
+    }
+
+    &.with-divider {
+        li {
+            &:first-child:before {
+                content: " ";
+            }
+
+            &:before {
+                content: "/";
+            }
+        }
+    }
+}
+
+// .breadcrumbs-divider {
+
+// }
+// ==========================================================================
+// Breadcrumbs Extend
+// ==========================================================================
+.breadcrumbs {
+    background: @breakcrumbs-bgColor;
+    margin-left: 0;
+    li {
+        margin: 0;
+        // padding-right: 8px;
+        padding-right: 0.5em;
+        color: @breakcrumbs-textColor;
+    }
+    
+    .is-disabled {
+        color: @gray-light;
+        cursor: @breakcrumbs-disable-Color;
+    }
+
+    .is-current {
+        color: @breakcrumbs-current-Color;
+    }
+
+    &.with-divider {
+        li {
+            &:first-child:before {
+                padding-right: 0;
+            }
+
+            &:before {
+                color: @breakcrumbs-dividerColor;
+                // padding-right: 10px;
+                padding-right: 0.6em;
+            }
+        }
+    }
+}
+
+.breadcrumbs-divider {
+    // padding-left: 8px;
+    padding-left: 0.5em;
+    color: @breakcrumbs-dividerColor;
+}

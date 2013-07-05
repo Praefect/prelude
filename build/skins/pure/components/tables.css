@@ -1,3 +1,96 @@
 .table {
-  background: #fff;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+.table th,
+.table td {
+  text-align: left;
+  vertical-align: top;
+}
+.table thead th {
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.table {
+  border: 1px solid #CBCBCB;
+}
+.table thead {
+  background: none repeat scroll 0 0 #E0E0E0;
+  color: #000000;
+  text-align: left;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.table th,
+.table td {
+  border-left: 1px solid #CBCBCB;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 6px 12px;
+}
+.table th {
+  font-weight: bold;
+  border-left: 1px solid #CBCBCB;
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.table.table_simple td,
+.table.table_simple th {
+  border: 0 none;
+}
+.table.table_striped tbody tr:nth-child(odd) td,
+.table.table_striped tbody tr:nth-child(odd) th {
+  background-color: #F2F2F2;
+}
+.table.table_bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  border-left: 0;
+}
+.table.table_bordered th,
+.table.table_bordered td {
+  border-left: 1px solid #CBCBCB;
+  border-top: 1px solid #CBCBCB;
+}
+.table.table_bordered caption + thead tr:first-child th,
+.table.table_bordered caption + tbody tr:first-child th,
+.table.table_bordered caption + tbody tr:first-child td,
+.table.table_bordered colgroup + thead tr:first-child th,
+.table.table_bordered colgroup + tbody tr:first-child th,
+.table.table_bordered colgroup + tbody tr:first-child td,
+.table.table_bordered thead:first-child tr:first-child th,
+.table.table_bordered tbody:first-child tr:first-child th,
+.table.table_bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table.table_hover tbody tr:hover td,
+.table.table_hover tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+.table.table_condensed th,
+.table.table_condensed td {
+  padding: 0.3em 0.4em;
+}
+.table.table_sortable {
+  border: 1px solid #dddddd;
+}
+.table.table_sortable thead th {
+  border-right: 1px solid #dddddd;
+  cursor: pointer;
+  left: 0;
+  position: relative;
+  top: 0;
 }

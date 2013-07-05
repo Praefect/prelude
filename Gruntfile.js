@@ -68,8 +68,7 @@ module.exports = function(grunt) {
   var skins = {
     pure: {
       common: [
-        'forms',
-        'typography'
+        'forms'
       ],
       components: [
         'alert',

@@ -1,0 +1,122 @@
+@import "init.less";
+// ==========================================================================
+// Buttons Core
+// ==========================================================================
+.button {
+    .inline-block();
+    text-align: center;
+    vertical-align: baseline;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+//remove focus dashed
+.button {
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+}
+
+.button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+// ==========================================================================
+// Buttons Extend
+// ==========================================================================
+// Core
+.button {
+    // padding: 4px 12px;
+    padding: 0.5em 1.5em;
+    line-height: normal;
+    *line-height: normal;
+    color: rgba(0,0,0,0.8);
+    font-size: 100%;
+    background-color: #E6E6E6;
+    border: 0 none transparent;
+    .border-radius(2px);
+    .transition(box-shadow .1s linear);
+    // Hover state
+    &:hover {
+        color: rgba(0,0,0,0.8);
+        text-decoration: none;
+        background:-webkit-gradient(linear,top,bottom,from(rgba(0,0,0,0.05)) 40%,to(rgba(0,0,0,0.1)));
+        background:-webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+        background:-moz-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+        background:-ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+        background:-o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+        background:linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+        // transition is only when going to hover, otherwise the background
+        // behind the gradient (there for IE<=9 fallback) gets mismatched
+    }
+
+    // Active state
+    &.button_active,
+    &:active {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+        outline: 0;
+    }
+
+    // Disabled state
+    &.button_disabled,
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: @button-disable-bgColor;
+        background-image: none;
+        .opacity(0.4);
+        .box-shadow(none);
+    }
+
+    //button size
+    &.button_mini {
+        font-size: 70%;
+    }
+    &.button_small {
+        font-size: 84%;
+    }
+    &.button_large {
+        font-size: 110%;
+    }
+
+    //button types
+    &.button_radius {
+        .border-radius(@button-borderRadius);
+    }
+    &.button_round {
+        .border-radius(1000px 1000px 1000px 1000px);
+    }
+    &.button_full {
+        width: 100%;
+    }
+
+}
+
+//Button groups
+.button-group {
+    .inline-block();
+    // margin-right: 2px;
+    .px-to-rem('margin-right', @base-fontSize * 0.33);
+    vertical-align: bottom;
+    &:after {
+        clear: both;
+    }
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    > .button, > input {
+        float: left;
+        margin-left: -1px;
+    }
+}

@@ -1,0 +1,77 @@
+.menu {
+  list-style: none;
+}
+.menu a {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.menu ul {
+  display: none;
+  list-style: none;
+}
+.menu .menu_sub:hover > ul {
+  display: block;
+}
+.menu a {
+  padding: 5px 20px;
+  color: #777777;
+  font-size: 100%;
+  white-space: nowrap;
+}
+.menu .menu_sub > a:after {
+  content: "▾";
+  padding-left: 10px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
+.menu li:hover > a {
+  background-color: #eeeeee;
+}
+.menu .menu_sub:hover > a {
+  background-color: #ebebeb;
+}
+.menu .menu_header > a {
+  color: #aaa;
+}
+.menu .menu_header:hover > a {
+  color: #aaa;
+}
+.menu_horizontal > li {
+  display: inline-block;
+}
+.menu_horizontal ul {
+  padding: 0;
+  margin: 0;
+}
+.menu_horizontal .menu_sub {
+  position: relative;
+}
+.menu_horizontal .menu_sub ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #B7B7B7;
+}
+.menu_horizontal .menu_sub .menu_sub ul {
+  top: 0;
+  left: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #B7B7B7;
+}
+.menu_horizontal .menu_sub .menu_sub > a:after {
+  content: "▸";
+  float: right;
+  position: relative;
+  top: -5px;
+  margin-right: -10px;
+  margin-top: -20px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
+.menu_list a {
+  text-align: left;
+}
