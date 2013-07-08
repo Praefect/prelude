@@ -71,10 +71,9 @@ module.exports = function(grunt) {
         'forms'
       ],
       components: [
-        'alert',
+        'buttons',
         'tables',
-        'tables|extend',
-        'menu'
+        'menus'
       ]
     }
   };

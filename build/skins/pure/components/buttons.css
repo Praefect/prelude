@@ -1,0 +1,194 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: baseline;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.ie7 .button {
+  display: inline;
+  zoom: 1;
+}
+.button {
+  outline: none;
+}
+.button:focus {
+  outline: none;
+}
+.button:active {
+  outline: none;
+}
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+.button {
+  padding: 0.5em 1.5em;
+  line-height: normal;
+  *line-height: normal;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 100%;
+  background-color: #E6E6E6;
+  border: 0 none transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: box-shadow 0.1s linear;
+  -moz-transition: box-shadow 0.1s linear;
+  -o-transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear;
+}
+.button:hover {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-repeat: no-repeat;
+}
+.button.button_active,
+.button:active {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+.button.button_disabled,
+.button[disabled] {
+  cursor: not-allowed;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.button.button_primary {
+  color: white;
+  background-color: #0078E7;
+}
+.button.button_mini {
+  font-size: 70%;
+}
+.button.button_small {
+  font-size: 85%;
+}
+.button.button_large {
+  font-size: 110%;
+}
+.button.button_xlarge {
+  font-size: 125%;
+}
+.button.button_radius {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.button.button_round {
+  -webkit-border-radius: 1000px 1000px 1000px 1000px;
+  -moz-border-radius: 1000px 1000px 1000px 1000px;
+  border-radius: 1000px 1000px 1000px 1000px;
+}
+.button.button_full {
+  width: 100%;
+}
+.button-group {
+  display: inline-block;
+  margin-right: 5.28px;
+  margin-right: 0.33rem;
+  vertical-align: bottom;
+}
+.ie7 .button-group {
+  display: inline;
+  zoom: 1;
+}
+.button-group:after {
+  clear: both;
+}
+.button-group:before,
+.button-group:after {
+  content: "";
+  display: table;
+}
+.button-group > .button,
+.button-group > input {
+  float: left;
+  margin-left: -1px;
+}
+.button_success,
+.button_error,
+.button_warning,
+.button_secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button_success {
+  background: #1cb841;
+  /* this is a green */
+
+}
+.button_error {
+  background: #ca3c3c;
+  /* this is a maroon */
+
+}
+.button_warning {
+  background: #df7514;
+  /* this is an orange */
+
+}
+.button_secondary {
+  background: #42b8dd;
+  /* this is a light blue */
+
+}
+[class^="button-icon-"],
+[class*=" button-icon-"] {
+  display: inline;
+  height: auto;
+  width: auto;
+  line-height: normal;
+  margin-top: 0;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  vertical-align: baseline;
+}
+[class^="button-icon-"]:before,
+[class*=" button-icon-"]:before {
+  display: inline-block;
+  text-decoration: inherit;
+}
+.button-icon-cog:before {
+  content: "";
+}
+.ibutton-icon-large {
+  margin-bottom: -4px;
+  margin-bottom: -0.25rem;
+  margin-top: -4px;
+  margin-top: -0.25rem;
+  font-size: 1.33333em;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  vertical-align: middle;
+}
+.ibutton-icon-large:before {
+  font-size: 1.33333em;
+  vertical-align: -10%;
+}
+.ibutton-icon-large:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.button-icon-shopping:before {
+  content: "";
+}

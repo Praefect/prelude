@@ -49,22 +49,15 @@
     .transition(box-shadow .1s linear);
     // Hover state
     &:hover {
-        color: rgba(0,0,0,0.8);
+        // color: rgba(0,0,0,0.8);
         text-decoration: none;
-        background:-webkit-gradient(linear,top,bottom,from(rgba(0,0,0,0.05)) 40%,to(rgba(0,0,0,0.1)));
-        background:-webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-        background:-moz-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-        background:-ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-        background:-o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-        background:linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-        // transition is only when going to hover, otherwise the background
-        // behind the gradient (there for IE<=9 fallback) gets mismatched
+        #gradient>.vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
     }
 
     // Active state
     &.button_active,
     &:active {
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+        .inner-shadow(~"0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2)");
         outline: 0;
     }
 
@@ -78,15 +71,24 @@
         .box-shadow(none);
     }
 
+    // Primary state
+    &.button_primary {
+        color: white;
+        background-color: #0078E7;
+    }
+
     //button size
     &.button_mini {
         font-size: 70%;
     }
     &.button_small {
-        font-size: 84%;
+        font-size: 85%;
     }
     &.button_large {
         font-size: 110%;
+    }
+    &.button_xlarge {
+        font-size: 125%;
     }
 
     //button types
@@ -119,4 +121,72 @@
         float: left;
         margin-left: -1px;
     }
+}
+
+//Colored buttons with rounded corners
+.button_success,
+.button_error,
+.button_warning,
+.button_secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button_success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+.button_error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+.button_warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+.button_secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+//Buttons with icons
+[class^="button-icon-"], 
+[class*=" button-icon-"] {
+    display: inline;
+    height: auto;
+    width: auto;
+    line-height: normal;
+    margin-top: 0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    vertical-align: baseline;
+
+    &:before {
+        display: inline-block;
+        text-decoration: inherit;
+    }
+}
+
+//icon-cog, small icon button
+.button-icon-cog:before {
+    content: "";
+}
+
+//large icon button
+.ibutton-icon-large {
+    .px-to-rem('margin-bottom', -4);
+    .px-to-rem('margin-top', -4);
+    font-size: 1.33333em;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    vertical-align: middle;
+    &:before {
+        font-size: 1.33333em;
+        vertical-align: -10%;
+    }
+    &:hover {
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.button-icon-shopping:before {
+    content: "";
 }
