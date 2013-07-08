@@ -49,7 +49,7 @@
     .transition(box-shadow .1s linear);
     // Hover state
     &:hover {
-        // color: rgba(0,0,0,0.8);
+        color: rgba(0,0,0,0.8);
         text-decoration: none;
         #gradient>.vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
     }
@@ -131,6 +131,9 @@
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    &:hover {
+        color: white;
+    }
 }
 .button_success {
     background: rgb(28, 184, 65); /* this is a green */
@@ -153,7 +156,7 @@
     width: auto;
     line-height: normal;
     margin-top: 0;
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;

@@ -45,6 +45,7 @@
   transition: box-shadow 0.1s linear;
 }
 .button:hover {
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
@@ -131,6 +132,12 @@
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+.button_success:hover,
+.button_error:hover,
+.button_warning:hover,
+.button_secondary:hover {
+  color: white;
+}
 .button_success {
   background: #1cb841;
   /* this is a green */
@@ -158,7 +165,7 @@
   width: auto;
   line-height: normal;
   margin-top: 0;
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
