@@ -73,7 +73,9 @@ module.exports = function(grunt) {
       components: [
         'buttons',
         'tables',
-        'menus'
+        'menu',
+        'pagination',
+        'tab'
       ]
     }
   };

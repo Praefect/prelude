@@ -132,17 +132,25 @@
         }
     }
 
-    //Sortable Table
+    // Sortable Table
     &.table_sortable {
         border: 1px solid @table-borerColor;
         thead {
             th {
-                border-right: 1px solid @table-borerColor;
                 cursor: pointer;
                 left: 0;
                 position: relative;
                 top: 0;
             }
+        }
+    }
+
+    // Table with Horizontal Borders
+    &.table_horizontal {
+        th,
+        td {
+            border-left: none;
+            border-top: 1px solid #CBCBCB;            
         }
     }
 }

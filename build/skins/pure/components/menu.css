@@ -3,28 +3,68 @@
 }
 .menu a {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   text-decoration: none;
 }
 .menu ul {
+  list-style: none;
+}
+.menu ul.menu_cascaded {
   display: none;
   list-style: none;
 }
 .menu .menu_sub:hover > ul {
   display: block;
 }
+div.menu {
+  display: block;
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
+}
+.menu > ul {
+  margin-bottom: 0;
+}
 .menu a {
-  padding: 5px 20px;
+  padding: 0.3em 1.25em;
   color: #777777;
   font-size: 100%;
   white-space: nowrap;
 }
+.menu .menu-heading {
+  display: block;
+  line-height: 1.5em;
+  margin: 0;
+  margin-top: 7.2px;
+  margin-top: 0.45rem;
+  padding: 0.3em 1.25em;
+  color: #565D64;
+  font-size: 90%;
+  border-bottom: 1px solid #DFDFDF;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
 .menu .menu_sub > a:after {
   content: "▾";
+  position: relative;
   padding-left: 10px;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
+.menu .menu_selected a {
+  color: #000000;
+}
+.menu .menu_disabled > a {
+  color: #BFBFBF;
+  border-color: transparent;
+  background-image: none;
+  cursor: default;
+}
+.menu .menu_disabled > a:hover {
+  color: #bfbfbf;
+  background-color: transparent;
+  background-image: none;
 }
 .menu li:hover > a {
   background-color: #eeeeee;
@@ -38,12 +78,19 @@
 .menu .menu_header:hover > a {
   color: #aaa;
 }
+.menu_horizontal {
+  display: inline-block;
+}
 .menu_horizontal > li {
   display: inline-block;
 }
 .menu_horizontal ul {
   padding: 0;
   margin: 0;
+}
+.menu_horizontal .menu-heading {
+  display: inline-block;
+  border-bottom: none;
 }
 .menu_horizontal .menu_sub {
   position: relative;
@@ -57,6 +104,9 @@
   background-color: #FFFFFF;
   border: 1px solid #B7B7B7;
 }
+.menu_horizontal .menu_sub .menu-heading {
+  border-bottom: 1px solid #DFDFDF;
+}
 .menu_horizontal .menu_sub .menu_sub ul {
   top: 0;
   left: 100%;
@@ -69,9 +119,22 @@
   position: relative;
   top: -5px;
   margin-right: -10px;
+  margin-right: -0.625rem;
   margin-top: -20px;
+  margin-top: -1.25rem;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
 }
 .menu_list a {
   text-align: left;
+}
+.menu.menu_open {
+  margin-top: 2em;
+  width: 40%;
+  border: 1px solid #B7B7B7;
+  background: none repeat scroll 0 0 #FFFFFF;
+  visibility: visible;
+  z-index: 2;
+}
+.menu.menu_open > ul {
+  margin-left: 0;
 }

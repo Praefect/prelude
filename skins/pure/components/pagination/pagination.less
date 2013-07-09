@@ -47,41 +47,24 @@
             color: rgba(0, 0, 0, 0.8);
             font-family: "proxima-nova",sans-serif;
             font-size: 100%;
-            border-radius: 0px;
+            .border-radius(0);
             background-color: #e6e6e6;
             text-align: center;
             vertical-align: top;
             white-space: nowrap;
             transition: box-shadow 0.1s linear 0s;
             &:hover {
-                background:-webkit-gradient(linear,top,bottom,from(rgba(0,0,0,0.05)) 40%,to(rgba(0,0,0,0.1)));
-                background:-webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-                background:-moz-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-                background:-ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-                background:-o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-                background:linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+                #gradient>.vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
             }
             &:active {
-                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+                .inner-shadow(~"0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2)");
             }
         }
     }
 
     .pagination_current a {
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-        &:hover {
-            background-color: #e6e6e6;
-            background-image: none;
-        }
+        .inner-shadow(~"0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2)");
     }
-
-    // .pagination_disabled a {
-    //     color: @pagination-disable-textColor;
-    //     &:hover {
-    //         color: @pagination-disable-hover-textColor;
-    //         background-color: @pagination-disable-hover-bgColor;
-    //     }
-    // }
 }
 
 .pagination-arrow {
@@ -89,9 +72,5 @@
         color: #C0C1C3;
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.45);
         border-radius: 2px 0 0 2px;
-        // &:hover {
-        //     color: @paginationArrow-hover-textColor;
-        //     background-color: @paginationArrow-hover-bgColor;
-        // }
     }
 }

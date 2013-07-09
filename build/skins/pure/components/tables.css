@@ -88,9 +88,13 @@
   border: 1px solid #dddddd;
 }
 .table.table_sortable thead th {
-  border-right: 1px solid #dddddd;
   cursor: pointer;
   left: 0;
   position: relative;
   top: 0;
+}
+.table.table_horizontal th,
+.table.table_horizontal td {
+  border-left: none;
+  border-top: 1px solid #CBCBCB;
 }

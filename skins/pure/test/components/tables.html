@@ -9,10 +9,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-     <link rel="stylesheet" href="../../../build/common/reset.css">
-    <link rel="stylesheet" href="../../../build/common/typography.css">
-    <link rel="stylesheet/less" type="text/css" href="../../less/components/tables/tables.less">
-    <script type="text/javascript" src="../less.js"></script>
+    <link rel="stylesheet" href="../../../../build/common/reset.css">
+    <link rel="stylesheet" href="../../../../build/common/typography.css">
+    <link rel="stylesheet" href="../../../../build/skins/pure/components/tables.css">
     <style>
         body {
             padding: 40px;
@@ -56,7 +55,7 @@
         
         <h3>Optional classes</h3>
         <h4>Simple Table</h4>
-        <p><code>.table</code>and<code>.is-striped</code></p>
+        <p><code>.table</code>and<code>.table_simple</code></p>
         <table class="table table_simple">
           <thead>
             <tr>
@@ -89,7 +88,7 @@
         </table>
         
         <h4>Striped Table</h4>
-        <p><code>.table</code>and<code>.is-striped</code></p>
+        <p><code>.table</code>and<code>.table_striped</code></p>
         <table class="table table_striped">
           <thead>
             <tr>
@@ -122,7 +121,7 @@
         </table>
         
         <h4>Bordered Table</h4>
-        <p><code>.table</code>and<code>.is-bordered</code></p>
+        <p><code>.table</code>and<code>.table_bordered</code></p>
         <table class="table table_bordered">
           <thead>
             <tr>
@@ -160,7 +159,7 @@
         </table>
         
         <h4>Hovered Table</h4>
-        <p><code>.table</code>and<code>.is-hover</code></p>
+        <p><code>.table</code>and<code>.table_hover</code></p>
         <table class="table table_hover">
           <thead>
             <tr>
@@ -193,7 +192,7 @@
         </table>
         
         <h4>Condensed Table</h4>
-        <p><code>.table</code>and<code>.is-condensed</code></p>
+        <p><code>.table</code>and<code>.table_condensed</code></p>
         <table class="table table_condensed">
           <thead>
             <tr>
@@ -226,8 +225,139 @@
         </table>
         
         <h4>Sortable Table</h4>
-        <p><code>.table</code>and<code>.is-sortable</code></p>
+        <p><code>.table</code>and<code>.table_sortable</code></p>
         <table class="table table_sortable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Default Table</h4>
+        <p><code>.table</code></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Bordered Table</h4>
+        <p><code>.table</code>and<code>.table_bordered</code></p>
+        <table class="table table_bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Table with Horizontal Borders</h4>
+        <p><code>.table</code>and<code>.table_horizontal</code></p>
+        <table class="table table_horizontal">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Striped Table</h4>
+        <p><code>.table</code>and<code>.table_striped</code></p>
+        <table class="table table_striped">
           <thead>
             <tr>
               <th>#</th>
