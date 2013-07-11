@@ -1,0 +1,31 @@
+@import "init.less";
+// ==========================================================================
+
+.tabs {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+	// -moz-box-sizing: border-box;
+	// .clearfix();
+
+	li {
+		// float: left;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.tab_active {
+	}
+}
+
+.panes {
+	display: block;
+	> div {
+		display: none;
+	}
+	.tab_active {
+		display: block;
+	}
+} 

@@ -1,0 +1,50 @@
+@import "init.less";
+// ==========================================================================
+// Pagination
+// ==========================================================================
+.pagination {
+    // margin-left: -5px;
+    .px-to-rem('margin-left', @base-fontSize * (0 - 0.33));
+
+    li {
+        color: @pagination-textColor;
+        font-size: @pagination-fontSize;
+        // margin-left: 5px;
+        .px-to-rem('margin-left', @base-fontSize * 0.33);
+        a {
+            // padding: 1px 7px;
+            padding: 0.1em 0.5em;
+            &:hover {
+                color: @pagination-hover-textColor;
+                background-color:  @pagination-hover-bgColor;
+            }
+        }
+    }
+
+    .is-current a {
+        background: @pagination-current-bgColor;
+        color: @pagination-current-textColor;
+        font-weight: bold;
+        &:hover {
+            background: @pagination-current-hover-bgColor;
+            color: @pagination-current-hover-textColor;
+        }
+    }
+
+    .is-disabled a {
+        color: @pagination-disable-textColor;
+        &:hover {
+            color: @pagination-disable-hover-textColor;
+            background-color: @pagination-disable-hover-bgColor;
+        }
+    }
+}
+
+.pagination-arrow {
+    a {
+        &:hover {
+            color: @paginationArrow-hover-textColor;
+            background-color: @paginationArrow-hover-bgColor;
+        }
+    }
+}

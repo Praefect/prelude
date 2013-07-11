@@ -1,0 +1,88 @@
+@import "init.less";
+// ==========================================================================
+
+.menu {
+	li {
+		
+	}
+
+	a {
+		padding: 4px 15px;
+		color: black;
+		background-color: #cbcbcb;
+	}
+
+	.menu_sub {
+		> a {
+			color: #fff;
+			background-color: #999;
+		}
+	}
+
+	// ul {
+
+	// }
+
+	li:hover > a {
+		color: #fff;
+		background-color: lightblue;
+	}
+
+	.menu_sub:hover > a {
+		color: #333;
+		background-color: #ebebeb;
+	}
+
+	// .menu_active {
+		
+	// }
+	.menu_header {
+		>a {
+			color: #aaa;
+		}
+
+	}
+	.menu_header:hover {
+		>a {
+			color: #aaa;
+		}
+	}
+}
+
+
+.menu_horizontal {
+	// .clearfix();
+	>li {
+		// float: left;
+		display: inline-block;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+	.menu_sub {
+		position: relative;
+		ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			padding: 0;
+			margin: 0;
+		}
+		.menu_sub {
+			ul {
+				top: 0;
+				left: 100%;
+			}
+		}
+	}
+
+}
+
+.menu_list {
+	a {
+		text-align: left;
+	}
+	
+}

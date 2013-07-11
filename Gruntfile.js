@@ -77,6 +77,14 @@ module.exports = function(grunt) {
         'pagination',
         'tab'
       ]
+    },
+    bootstrap: {
+      common: [
+        'forms'
+      ],
+      components: [
+        'alert'
+      ]
     }
   };
 
