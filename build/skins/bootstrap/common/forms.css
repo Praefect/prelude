@@ -39,9 +39,30 @@ input[type="tel"],
 input[type="color"],
 textarea,
 select {
+  display: inline-block;
   max-width: 100%;
   letter-spacing: normal;
   outline: none;
+}
+.ie7 input[type="text"],
+.ie7 input[type="password"],
+.ie7 input[type="email"],
+.ie7 input[type="file"],
+.ie7 input[type="datetime"],
+.ie7 input[type="datetime-local"],
+.ie7 input[type="date"],
+.ie7 input[type="month"],
+.ie7 input[type="time"],
+.ie7 input[type="week"],
+.ie7 input[type="number"],
+.ie7 input[type="url"],
+.ie7 input[type="search"],
+.ie7 input[type="tel"],
+.ie7 input[type="color"],
+.ie7 textarea,
+.ie7 select {
+  display: inline;
+  zoom: 1;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -52,39 +73,6 @@ input[type="radio"] {
 label {
   display: block;
   letter-spacing: normal;
-}
-.form-prepend,
-.form-append {
-  letter-spacing: -4px;
-}
-.form-prepend .form_prepend,
-.form-append .form_prepend,
-.form-prepend .form_append,
-.form-append .form_append {
-  display: inline-block;
-  padding: 0.3em 0.6em;
-  height: 2em;
-  letter-spacing: normal;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: top;
-  border: 1px solid #aaaaaa;
-  background: #eeeeee;
-}
-.ie7 .form-prepend .form_prepend,
-.ie7 .form-append .form_prepend,
-.ie7 .form-prepend .form_append,
-.ie7 .form-append .form_append {
-  display: inline;
-  zoom: 1;
-}
-.form-prepend .form_prepend,
-.form-append .form_prepend {
-  margin-right: -2px;
-}
-.form-prepend .form_append,
-.form-append .form_append {
-  margin-left: -2px;
 }
 ::-webkit-input-placeholder,
 ::-webkit-textarea-placeholder {
@@ -125,6 +113,13 @@ input[type="button"] {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
+}
+.ie7 button,
+.ie7 input[type="submit"],
+.ie7 input[type="reset"],
+.ie7 input[type="button"] {
+  display: inline;
+  zoom: 1;
 }
 button:hover,
 input[type="submit"]:hover,
@@ -173,7 +168,6 @@ input[type="tel"],
 input[type="color"],
 textarea,
 select {
-  display: inline-block;
   height: 20px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -181,7 +175,7 @@ select {
   padding: 0.285em 0.428em;
   font-size: 0.875em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -197,10 +191,31 @@ select {
 }
 input[type="checkbox"],
 input[type="radio"] {
+  float: left;
+  margin-top: 4px;
+  margin-top: 0.25rem;
   font-weight: normal;
 }
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: thin dotted #333333;
+  outline-offset: -2px;
+}
 select {
-  padding: 0;
+  width: 220px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  background-color: #FFFFFF;
+}
+select:focus {
+  outline: thin dotted #333333;
+  outline-offset: -2px;
+}
+select[multiple] {
   height: auto;
 }
 textarea {
@@ -215,9 +230,193 @@ label {
   line-height: 20px;
   font-size: 14px;
   font-weight: normal;
+  cursor: pointer;
 }
-.form_inline label {
+.form-prepend .form_prepend,
+.form-append .form_prepend,
+.form-prepend .form_append,
+.form-append .form_append {
   display: inline-block;
+  width: auto;
+  min-width: 16px;
+  height: 20px;
+  padding: 4px 5px;
+  line-height: 20px;
+  font-size: 87.5%;
+  font-weight: normal;
+  border: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  text-align: center;
+  vertical-align: top;
+  text-shadow: 0 1px 0 #FFFFFF;
+  white-space: nowrap;
+}
+.ie7 .form-prepend .form_prepend,
+.ie7 .form-append .form_prepend,
+.ie7 .form-prepend .form_append,
+.ie7 .form-append .form_append {
+  display: inline;
+  zoom: 1;
+}
+.form-prepend .button,
+.form-append .button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 4px 12px;
+}
+.form-prepend .form_prepend,
+.form-append .form_prepend {
+  margin-right: -5px;
+  margin-right: -0.3125rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-prepend .form_prepend:first-child,
+.form-append .form_prepend:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.form-prepend .form_append,
+.form-append .form_append {
+  margin-left: -5px;
+  margin-left: -0.3125rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-prepend .form_append:last-child,
+.form-append .form_append:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.form-prepend input {
+  position: relative;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.form-append input {
+  position: relative;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.form-prepend.form-append input {
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-append .form-button-group {
+  display: inline-block;
+  vertical-align: top;
+}
+.ie7 .form-append .form-button-group {
+  display: inline;
+  zoom: 1;
+}
+.form-append .form-button-group .form_prepend {
+  margin-right: -5px;
+  margin-right: -0.3125rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-append .form-button-group .form_prepend:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.form-append .form-button-group .form_append {
+  margin-left: -5px;
+  margin-left: -0.3125rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-append .form-button-group .form_append:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.form-caret {
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  margin-left: 0;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000000;
+  vertical-align: top;
+}
+.form-dropdown-menu {
+  display: none;
+  float: left;
+  min-width: 160px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 2px;
+  margin-top: 0.125rem;
+  padding: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  list-style: none outside none;
+  z-index: 1000;
+}
+.form-dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  line-height: 20px;
+  color: #333333;
+  font-weight: normal;
+  white-space: nowrap;
+  clear: both;
+}
+label.form_inline,
+.form_inline label,
+.form-group input {
+  display: inline-block;
+}
+.ie7 label.form_inline,
+.ie7 .form_inline label,
+.ie7 .form-group input {
+  display: inline;
+  zoom: 1;
+}
+.form-control-label {
+  float: left;
+  width: 160px;
+  padding-top: 0.33em;
+  text-align: right;
+}
+.form-group {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+.form-controls {
+  margin-left: 180px;
+  margin-left: 11.25rem;
+}
+.form-controls input[type='checkbox'] {
+  margin-left: -20px;
+  margin-left: -1.25rem;
 }
 input:focus,
 textarea:focus {
@@ -331,4 +530,20 @@ input.form-search {
 }
 .form_xxlarge {
   width: 530px;
+}
+.form-checkbox.form_inline {
+  display: inline-block;
+  margin-left: 10px;
+  margin-left: 0.625rem;
+  margin-bottom: 0;
+  padding-top: 5px;
+  vertical-align: middle;
+}
+.ie7 .form-checkbox.form_inline {
+  display: inline;
+  zoom: 1;
+}
+.form-checkbox {
+  min-height: 20px;
+  padding-left: 20px;
 }
