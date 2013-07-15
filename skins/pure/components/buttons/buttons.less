@@ -6,13 +6,10 @@
     .inline-block();
     text-align: center;
     vertical-align: baseline;
-    cursor: pointer;
     -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    .user-select(none);
     white-space: nowrap;
+    cursor: pointer;
 }
 
 //remove focus dashed
@@ -41,22 +38,26 @@
     padding: 0.5em 1.5em;
     line-height: normal;
     *line-height: normal;
+    color: #000;
     color: rgba(0,0,0,0.8);
     font-size: 100%;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     border: 0 none transparent;
     .border-radius(2px);
     .transition(box-shadow .1s linear);
     // Hover state
     &:hover {
+        color: #000;
         color: rgba(0,0,0,0.8);
         text-decoration: none;
-        #gradient>.vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
+        #gradient > .vertical-three-colors(transparent,#000,40%,#000);
+        #gradient > .vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
     }
 
     // Active state
     &.button_active,
     &:active {
+        .inner-shadow(~"0 0 0 1px #000, inset 0 0 6px #000");
         .inner-shadow(~"0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2)");
         outline: 0;
     }
@@ -64,44 +65,43 @@
     // Disabled state
     &.button_disabled,
     &[disabled] {
-        cursor: not-allowed;
         background-color: @button-disable-bgColor;
         background-image: none;
-        .opacity(0.4);
         .box-shadow(none);
+        .opacity(0.4);
+        cursor: not-allowed;
     }
+}
 
-    // Primary state
-    &.button_primary {
-        color: white;
-        background-color: #0078E7;
-    }
+// Primary state
+.button_primary {
+    color: white;
+    background-color: #0078e7;
+}
 
-    //button size
-    &.button_mini {
-        font-size: 70%;
-    }
-    &.button_small {
-        font-size: 85%;
-    }
-    &.button_large {
-        font-size: 110%;
-    }
-    &.button_xlarge {
-        font-size: 125%;
-    }
+//button size
+.button_mini {
+    font-size: 70%;
+}
+.button_small {
+    font-size: 85%;
+}
+.button_large {
+    font-size: 110%;
+}
+.button_xlarge {
+    font-size: 125%;
+}
 
-    //button types
-    &.button_radius {
-        .border-radius(@button-borderRadius);
-    }
-    &.button_round {
-        .border-radius(1000px 1000px 1000px 1000px);
-    }
-    &.button_full {
-        width: 100%;
-    }
-
+//button types
+.button_radius {
+    .border-radius(@button-borderRadius);
+}
+.button_round {
+    .border-radius(1000px 1000px 1000px 1000px);
+}
+.button_full {
+    width: 100%;
 }
 
 //Button groups
@@ -129,28 +129,29 @@
 .button_warning,
 .button_secondary {
     color: white;
-    border-radius: 4px;
+    .border-radius(4px);
+    text-shadow: 0 1px 1px #000;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     &:hover {
         color: white;
     }
 }
 .button_success {
-    background: rgb(28, 184, 65); /* this is a green */
+    background-color: rgb(28, 184, 65); /* this is a green */
 }
 .button_error {
-    background: rgb(202, 60, 60); /* this is a maroon */
+    background-color: rgb(202, 60, 60); /* this is a maroon */
 }
 .button_warning {
-    background: rgb(223, 117, 20); /* this is an orange */
+    background-color: rgb(223, 117, 20); /* this is an orange */
 }
 .button_secondary {
-    background: rgb(66, 184, 221); /* this is a light blue */
+    background-color: rgb(66, 184, 221); /* this is a light blue */
 }
 
 //Buttons with icons
 [class^="button-icon-"], 
-[class*=" button-icon-"] {
+[class*="button-icon-"] {
     display: inline;
     height: auto;
     width: auto;
@@ -163,8 +164,7 @@
     vertical-align: baseline;
 
     &:before {
-        display: inline-block;
-        text-decoration: inherit;
+        .inline-block();
     }
 }
 
@@ -174,7 +174,7 @@
 }
 
 //large icon button
-.ibutton-icon-large {
+.button-icon-large {
     .px-to-rem('margin-bottom', -4);
     .px-to-rem('margin-top', -4);
     font-size: 1.33333em;
@@ -186,6 +186,7 @@
         vertical-align: -10%;
     }
     &:hover {
+        color: #000;
         color: rgba(0, 0, 0, 0.8);
     }
 }

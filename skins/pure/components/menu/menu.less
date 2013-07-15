@@ -9,11 +9,9 @@
 	// }
 
 	a {
-		display: block;    
-		// font-family: "proxima-nova",​sans-serif; /*No "proxima-nova"*/
+		display: block;
    		font-size: 100%;
  	    line-height: 1.5;
-		// text-align: center;
 		text-decoration: none;
 	}
 
@@ -40,9 +38,6 @@ div.menu {
 }
 
 .menu {
-	// .px-to-rem('margin-bottom', 25);
-	// margin-bottom: 25px;
-
 	>ul {
 		margin-bottom: 0;
 	}
@@ -53,10 +48,9 @@ div.menu {
 
 	a {
 		padding: 0.3em 1.25em;
-		color: #777777;
+		color: #777;
 		font-size: 100%;
 		white-space:nowrap;  
-		// background-color: #cbcbcb;
 	}
 
 	.menu-heading {
@@ -65,9 +59,9 @@ div.menu {
 	    margin: 0;
 	    .px-to-rem('margin-top',7.2);
 	    padding: 0.3em 1.25em;
-	    color: #565D64;
+	    color: #565d64;
 	    font-size: 90%;
-	    border-bottom: 1px solid #DFDFDF;
+	    border-bottom: 1px solid #dfdfdf;
 	    text-transform: uppercase;
 	    text-decoration: none;
 	    white-space: nowrap;
@@ -83,26 +77,8 @@ div.menu {
 		}
 	}
 
-	.menu_selected a {
-	    color: #000000;
-	}
-
-	.menu_disabled {
-		> a {
-		    color: #BFBFBF;
-		    border-color: transparent;
-		    background-image: none;
-		    cursor: default;
-		    &:hover {
-		    	color: #bfbfbf;
-		    	background-color: transparent;
-		    	background-image: none;
-		    }
-		}
-	}
-
 	li:hover > a {
-		background-color: #eeeeee;
+		background-color: #eee;
 	}
 
 	.menu_sub:hover > a {
@@ -122,10 +98,28 @@ div.menu {
 	}
 }
 
+.menu_selected a {
+    color: #000;
+}
+
+.menu_disabled {
+	> a {
+	    color: #bfbfbf;
+	    border-color: transparent;
+	    background-image: none;
+	    cursor: default;
+	    &:hover {
+	    	color: #bfbfbf;
+	    	background-color: transparent;
+	    	background-image: none;
+	    }
+	}
+}
+
 .menu_horizontal {
-	display: inline-block;
+	.inline-block();
 	>li {
-		display: inline-block;
+		.inline-block();
 	}
 
 	ul {
@@ -133,7 +127,7 @@ div.menu {
 		margin: 0;
 	}
 	.menu-heading {
-		display: inline-block;
+		.inline-block();
 		border-bottom: none;
 	}
 	.menu_sub {
@@ -144,26 +138,26 @@ div.menu {
 			left: 0;
 			padding: 0;
 			margin: 0;
-			background-color: #FFFFFF;
-   			border: 1px solid #B7B7B7;
+			background-color: #fff;
+   			border: 1px solid #b7b7b7;
 		}
 		
 		.menu-heading {
-			border-bottom: 1px solid #DFDFDF;
+			border-bottom: 1px solid #dfdfdf;
 		}
 
 		.menu_sub {
 			ul {
 				top: 0;
 				left: 100%;
-				background-color: #FFFFFF;
-   				border: 1px solid #B7B7B7;
+				background-color: #fff;
+   				border: 1px solid #b7b7b7;
 			}
 
 			>a:after {
 				content: "▸";
-	    		float: right;
 	    		position: relative;
+	    		float: right;
 	    		top: -5px;
 	    		.px-to-rem('margin-right',-10);
 	    		.px-to-rem('margin-top',-20);
@@ -183,8 +177,8 @@ div.menu {
 .menu.menu_open {
     margin-top: 2em;
     width: 40%;
-    border: 1px solid #B7B7B7;
-    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #b7b7b7;
+    background-color: #fff;
     visibility: visible;
     z-index: 2;
     >ul {

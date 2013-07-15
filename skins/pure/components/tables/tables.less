@@ -8,7 +8,7 @@
 .table {
     max-width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
+    // border-spacing: 0;
     empty-cells: show;
     // Cells
     th,
@@ -30,11 +30,11 @@
 // ==========================================================================
 
 .table {    
-    border: 1px solid #CBCBCB;
+    border: 1px solid #cbcbcb;
     // Cells
     thead {
-        background: none repeat scroll 0 0 #E0E0E0;
-        color: #000000;
+        background-color: #e0e0e0;
+        color: #000;
         text-align: left;
         vertical-align: bottom;
         white-space: nowrap;
@@ -43,16 +43,15 @@
     th,
     td {
         // padding: 8px;
-        border-left: 1px solid #CBCBCB;
+        border-left: 1px solid #cbcbcb;
         border-width: 0 0 0 1px;
-        font-size: inherit;
         margin: 0;
         overflow: visible;
         padding: 6px 12px;
     }
     th {
         font-weight: bold;
-        border-left: 1px solid #CBCBCB;
+        border-left: 1px solid #cbcbcb;
     }
     // Remove top border from thead by default
     caption + thead tr:first-child th,
@@ -67,90 +66,90 @@
     tbody + tbody {
         border-top: 2px solid @table-borerColor;
     }
+}
 
-    //Simple Table
+//Simple Table
 
-    &.table_simple {
-        td, th {
-            border: 0 none;
+.table_simple {
+    td, th {
+        border: 0 none;
+    }
+}
+
+// Zebra-stripe
+.table_striped {
+    tbody {
+        tr:nth-child(odd) td,
+        tr:nth-child(odd) th {
+            background-color: #f2f2f2;
         }
     }
+}
 
-    // Zebra-stripe
-    &.table_striped {
-        tbody {
-            tr:nth-child(odd) td,
-            tr:nth-child(odd) th {
-                background-color: #F2F2F2;
-            }
+// BORDERED VERSION
+// ----------------
+
+.table_bordered {
+    border: 1px solid @table-borerColor;
+    border-collapse: separate; // Done so we can round those corners!
+    // *border-collapse: collapse; // IE7 can't round corners anyway
+    border-left: 0;
+    th,
+    td {
+        border-left: 1px solid #cbcbcb;
+        border-top: 1px solid #cbcbcb;
+    }
+    // Prevent a double border
+    caption + thead tr:first-child th,
+    caption + tbody tr:first-child th,
+    caption + tbody tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + tbody tr:first-child th,
+    colgroup + tbody tr:first-child td,
+    thead:first-child tr:first-child th,
+    tbody:first-child tr:first-child th,
+    tbody:first-child tr:first-child td {
+        border-top: 0;
+    }
+}
+
+// Hover effect
+.table_hover {
+    tbody {
+        tr:hover td,
+        tr:hover th {
+            background-color: @table-hover-bgColor;
         }
     }
+}
 
-    // BORDERED VERSION
-    // ----------------
+// CONDENSED TABLE W/ HALF PADDING
+.table_condensed {
+    th,
+    td {
+        // padding: 4px 5px;
+        padding: 0.3em 0.4em;
+    }
+}
 
-    &.table_bordered {
-        border: 1px solid @table-borerColor;
-        border-collapse: separate; // Done so we can round those corners!
-        // *border-collapse: collapse; // IE7 can't round corners anyway
-        border-left: 0;
-        th,
-        td {
-            border-left: 1px solid #CBCBCB;
-            border-top: 1px solid #CBCBCB;
-        }
-        // Prevent a double border
-        caption + thead tr:first-child th,
-        caption + tbody tr:first-child th,
-        caption + tbody tr:first-child td,
-        colgroup + thead tr:first-child th,
-        colgroup + tbody tr:first-child th,
-        colgroup + tbody tr:first-child td,
-        thead:first-child tr:first-child th,
-        tbody:first-child tr:first-child th,
-        tbody:first-child tr:first-child td {
-            border-top: 0;
+// Sortable Table
+.table_sortable {
+    border: 1px solid @table-borerColor;
+    thead {
+        th {
+            position: relative;
+            left: 0;
+            top: 0;
+            cursor: pointer;
         }
     }
+}
 
-    // Hover effect
-    &.table_hover {
-        tbody {
-            tr:hover td,
-            tr:hover th {
-                background-color: @table-hover-bgColor;
-            }
-        }
-    }
-
-    // CONDENSED TABLE W/ HALF PADDING
-    &.table_condensed {
-        th,
-        td {
-            // padding: 4px 5px;
-            padding: 0.3em 0.4em;
-        }
-    }
-
-    // Sortable Table
-    &.table_sortable {
-        border: 1px solid @table-borerColor;
-        thead {
-            th {
-                cursor: pointer;
-                left: 0;
-                position: relative;
-                top: 0;
-            }
-        }
-    }
-
-    // Table with Horizontal Borders
-    &.table_horizontal {
-        th,
-        td {
-            border-left: none;
-            border-top: 1px solid #CBCBCB;            
-        }
+// Table with Horizontal Borders
+.table_horizontal {
+    th,
+    td {
+        border-left: none;
+        border-top: 1px solid #cbcbcb;            
     }
 }
