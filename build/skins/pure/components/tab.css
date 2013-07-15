@@ -7,8 +7,11 @@
 .tab-tabs li {
   display: inline-block;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
+}
+.ie7 .tab-tabs li {
+  display: inline;
+  zoom: 1;
 }
 .tab-panes {
   display: block;
@@ -23,14 +26,18 @@
   margin: 0;
   padding: 0;
   height: 32px;
-  border-bottom: 5px solid #D6D6D6;
+  border-bottom: 5px solid #d6d6d6;
   list-style: none outside none;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tab-tabs li {
-  display: inline-block;
-  float: left;
   position: relative;
+  float: left;
+  display: inline-block;
   top: -8px;
   margin-right: 2.8px;
   margin-right: 0.175rem;
@@ -41,11 +48,17 @@
   font-size: 85%;
   border-width: 1px 1px 0;
   border-style: solid;
-  border-color: #FCFCFC #E6E6E6 #E6E6E6 #FCFCFC;
+  border-color: #fcfcfc #e6e6e6 #e6e6e6 #fcfcfc;
   -webkit-border-radius: 6px 6px 0 0;
   -moz-border-radius: 6px 6px 0 0;
   border-radius: 6px 6px 0 0;
   background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 49%, #f5f5f5 51%, #bfbfbf 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(49%, #f5f5f5), color-stop(51%, #f5f5f5), color-stop(100%, #bfbfbf));
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 49%, #f5f5f5 51%, #bfbfbf 100%);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, #f5f5f5 49%, #f5f5f5 51%, #bfbfbf 100%);
+  background-image: -ms-linear-gradient(top, #fcfcfc 0%, #f5f5f5 49%, #f5f5f5 51%, #bfbfbf 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #f5f5f5 49%, #f5f5f5 51%, #bfbfbf 100%);
   background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(245, 245, 245, 0) 49%, rgba(245, 245, 245, 0) 51%, rgba(191, 191, 191, 0.3) 100%);
   /* FF3.6+ */
 
@@ -66,17 +79,26 @@
 
   background-repeat: no-repeat;
   text-align: center;
-  text-decoration: none;
   vertical-align: bottom;
   cursor: pointer;
+}
+.ie7 .tab-tabs li {
+  display: inline;
+  zoom: 1;
 }
 .tab-tabs li:hover,
 .tab-tabs li:focus {
   border-style: solid;
   border-width: 1px;
-  border-color: #E6E6E6 #BFBFBF #BFBFBF #E6E6E6;
+  border-color: #e6e6e6 #bfbfbf #bfbfbf #e6e6e6;
   border-image: none;
   background-color: #dedede;
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #dedede 49%, #dedede 51%, #adadad 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(49%, #dedede), color-stop(51%, #dedede), color-stop(100%, #adadad));
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #dedede 49%, #dedede 51%, #adadad 100%);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, #dedede 49%, #dedede 51%, #adadad 100%);
+  background-image: -ms-linear-gradient(top, #fcfcfc 0%, #dedede 49%, #dedede 51%, #adadad 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #dedede 49%, #dedede 51%, #adadad 100%);
   background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(222, 222, 222, 0) 49%, rgba(222, 222, 222, 0) 51%, rgba(173, 173, 173, 0.3) 100%);
   /* FF3.6+ */
 
@@ -99,8 +121,14 @@
 }
 .tab-tabs .tab_active {
   color: #363636;
-  border-color: #FCFCFC #D6D6D6 #D6D6D6 #FCFCFC;
+  border-color: #fcfcfc #d6d6d6 #d6d6d6 #fcfcfc;
   background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #e6e6e6 49%, #e6e6e6 51%, #b5b5b5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(49%, #e6e6e6), color-stop(51%, #e6e6e6), color-stop(100%, #b5b5b5));
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #e6e6e6 49%, #e6e6e6 51%, #b5b5b5 100%);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, #e6e6e6 49%, #e6e6e6 51%, #b5b5b5 100%);
+  background-image: -ms-linear-gradient(top, #fcfcfc 0%, #e6e6e6 49%, #e6e6e6 51%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #e6e6e6 49%, #e6e6e6 51%, #b5b5b5 100%);
   background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(230, 230, 230, 0) 49%, rgba(230, 230, 230, 0) 51%, rgba(181, 181, 181, 0.3) 100%);
   /* FF3.6+ */
 
@@ -123,6 +151,12 @@
 }
 .tab-tabs .tab_active:hover {
   background-color: #cfcfcf;
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #cfcfcf 49%, #cfcfcf 51%, #9e9e9e 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(49%, #cfcfcf), color-stop(51%, #cfcfcf), color-stop(100%, #9e9e9e));
+  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #cfcfcf 49%, #cfcfcf 51%, #9e9e9e 100%);
+  background-image: -o-linear-gradient(top, #fcfcfc 0%, #cfcfcf 49%, #cfcfcf 51%, #9e9e9e 100%);
+  background-image: -ms-linear-gradient(top, #fcfcfc 0%, #cfcfcf 49%, #cfcfcf 51%, #9e9e9e 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #cfcfcf 49%, #cfcfcf 51%, #9e9e9e 100%);
   background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(207, 207, 207, 0) 49%, rgba(207, 207, 207, 0) 51%, rgba(158, 158, 158, 0.3) 100%);
   /* FF3.6+ */
 
@@ -146,15 +180,15 @@
 .tab-panes {
   min-height: 166px;
   padding: 0.3em 1em;
-  color: #4F4F4F;
-  border: 1px solid #EDEDED;
+  color: #4f4f4f;
+  border: 1px solid #ededed;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
   -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-  background-color: #FFFFFF;
+  background-color: #fff;
   z-index: 2;
 }
 .tab-panes > div {

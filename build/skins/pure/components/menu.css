@@ -27,7 +27,7 @@ div.menu {
 }
 .menu a {
   padding: 0.3em 1.25em;
-  color: #777777;
+  color: #777;
   font-size: 100%;
   white-space: nowrap;
 }
@@ -38,9 +38,9 @@ div.menu {
   margin-top: 7.2px;
   margin-top: 0.45rem;
   padding: 0.3em 1.25em;
-  color: #565D64;
+  color: #565d64;
   font-size: 90%;
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #dfdfdf;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -52,22 +52,8 @@ div.menu {
   padding-left: 10px;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
 }
-.menu .menu_selected a {
-  color: #000000;
-}
-.menu .menu_disabled > a {
-  color: #BFBFBF;
-  border-color: transparent;
-  background-image: none;
-  cursor: default;
-}
-.menu .menu_disabled > a:hover {
-  color: #bfbfbf;
-  background-color: transparent;
-  background-image: none;
-}
 .menu li:hover > a {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 .menu .menu_sub:hover > a {
   background-color: #ebebeb;
@@ -78,11 +64,33 @@ div.menu {
 .menu .menu_header:hover > a {
   color: #aaa;
 }
+.menu_selected a {
+  color: #000;
+}
+.menu_disabled > a {
+  color: #bfbfbf;
+  border-color: transparent;
+  background-image: none;
+  cursor: default;
+}
+.menu_disabled > a:hover {
+  color: #bfbfbf;
+  background-color: transparent;
+  background-image: none;
+}
 .menu_horizontal {
   display: inline-block;
 }
+.ie7 .menu_horizontal {
+  display: inline;
+  zoom: 1;
+}
 .menu_horizontal > li {
   display: inline-block;
+}
+.ie7 .menu_horizontal > li {
+  display: inline;
+  zoom: 1;
 }
 .menu_horizontal ul {
   padding: 0;
@@ -91,6 +99,10 @@ div.menu {
 .menu_horizontal .menu-heading {
   display: inline-block;
   border-bottom: none;
+}
+.ie7 .menu_horizontal .menu-heading {
+  display: inline;
+  zoom: 1;
 }
 .menu_horizontal .menu_sub {
   position: relative;
@@ -101,22 +113,22 @@ div.menu {
   left: 0;
   padding: 0;
   margin: 0;
-  background-color: #FFFFFF;
-  border: 1px solid #B7B7B7;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
 }
 .menu_horizontal .menu_sub .menu-heading {
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #dfdfdf;
 }
 .menu_horizontal .menu_sub .menu_sub ul {
   top: 0;
   left: 100%;
-  background-color: #FFFFFF;
-  border: 1px solid #B7B7B7;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
 }
 .menu_horizontal .menu_sub .menu_sub > a:after {
   content: "▸";
-  float: right;
   position: relative;
+  float: right;
   top: -5px;
   margin-right: -10px;
   margin-right: -0.625rem;
@@ -130,8 +142,8 @@ div.menu {
 .menu.menu_open {
   margin-top: 2em;
   width: 40%;
-  border: 1px solid #B7B7B7;
-  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #b7b7b7;
+  background-color: #fff;
   visibility: visible;
   z-index: 2;
 }

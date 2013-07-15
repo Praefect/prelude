@@ -7,7 +7,6 @@ form input[type="reset"],
 form input[type="button"] {
   display: inline-block;
   letter-spacing: normal;
-  text-decoration: none;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -81,11 +80,11 @@ label {
 }
 ::-webkit-input-placeholder,
 ::-webkit-textarea-placeholder {
-  color: #999999;
+  color: #999;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #999;
 }
 button,
 input[type="submit"],
@@ -95,23 +94,28 @@ input[type="button"] {
   line-height: 20px;
   margin-bottom: 0;
   padding: 0.285em 0.857em;
-  color: #333333;
+  color: #333;
   font-size: 0.875em;
+  text-shadow: 0 1px 1px #ffffff;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   border-width: 1px;
   border-style: solid;
+  border-color: #000 #000 #b3b3b3;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #b3b3b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   border-image: none;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
   background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
   background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
   background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 1px 0 rgb(255, 255, 255), 0 1px 2px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 0 rgb(255, 255, 255), 0 1px 2px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 0 rgb(255, 255, 255), 0 1px 2px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -143,7 +147,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline-offset: -2px;
 }
 button:active,
@@ -151,6 +155,9 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
   background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 2px 4px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0);
+  box-shadow: inset 0 2px 4px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -186,6 +193,9 @@ select {
   border-radius: 4px;
   background: #ffffff;
   vertical-align: middle;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -213,8 +223,8 @@ select {
   width: 220px;
   height: 30px;
   line-height: 30px;
-  border: 1px solid #CCCCCC;
-  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 select:focus {
   outline: thin dotted #333333;
@@ -249,11 +259,11 @@ label {
   line-height: 20px;
   font-size: 87.5%;
   font-weight: normal;
-  border: 1px solid #CCCCCC;
-  background-color: #EEEEEE;
+  border: 1px solid #ccc;
+  background-color: #eee;
   text-align: center;
   vertical-align: top;
-  text-shadow: 0 1px 0 #FFFFFF;
+  text-shadow: 0 1px 0 #fff;
   white-space: nowrap;
 }
 .ie7 .form-prepend .form_prepend,
@@ -271,34 +281,6 @@ label {
   -o-box-sizing: content-box;
   box-sizing: content-box;
   padding: 4px 12px;
-}
-.form-prepend .form_prepend,
-.form-append .form_prepend {
-  margin-right: -5px;
-  margin-right: -0.3125rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.form-prepend .form_prepend:first-child,
-.form-append .form_prepend:first-child {
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
-}
-.form-prepend .form_append,
-.form-append .form_append {
-  margin-left: -5px;
-  margin-left: -0.3125rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.form-prepend .form_append:last-child,
-.form-append .form_append:last-child {
-  -webkit-border-radius: 0 4px 4px 0;
-  -moz-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
 }
 .form-prepend input {
   position: relative;
@@ -318,34 +300,26 @@ label {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.form-append .form-button-group {
-  display: inline-block;
-  vertical-align: top;
-}
-.ie7 .form-append .form-button-group {
-  display: inline;
-  zoom: 1;
-}
-.form-append .form-button-group .form_prepend {
+.form_prepend {
   margin-right: -5px;
   margin-right: -0.3125rem;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.form-append .form-button-group .form_prepend:first-child {
+.form_prepend:first-child {
   -webkit-border-radius: 4px 0 0 4px;
   -moz-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
 }
-.form-append .form-button-group .form_append {
+.form_append {
   margin-left: -5px;
   margin-left: -0.3125rem;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.form-append .form-button-group .form_append:last-child {
+.form_append:last-child {
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
@@ -360,25 +334,33 @@ label {
   margin-top: 0.5rem;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid #000000;
+  border-top: 4px solid #000;
   vertical-align: top;
 }
+.ie7 .form-caret {
+  display: inline;
+  zoom: 1;
+}
 .form-dropdown-menu {
-  display: none;
-  float: left;
-  min-width: 160px;
   position: absolute;
+  float: left;
+  display: none;
+  min-width: 160px;
   left: 0;
   top: 100%;
   margin-top: 2px;
   margin-top: 0.125rem;
   padding: 5px 0;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   background-clip: padding-box;
-  background-color: #FFFFFF;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgb(0, 0, 0);
+  -moz-box-shadow: 0 5px 10px rgb(0, 0, 0);
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -393,6 +375,17 @@ label {
   font-weight: normal;
   white-space: nowrap;
   clear: both;
+}
+.form-button-group {
+  display: inline-block;
+  vertical-align: top;
+}
+.ie7 .form-button-group {
+  display: inline;
+  zoom: 1;
+}
+.form-button-group:active .form-dropdown-menu {
+  display: block;
 }
 label.form_inline,
 .form_inline label,
@@ -425,7 +418,11 @@ label.form_inline,
 }
 input:focus,
 textarea:focus {
+  border-color: #52a8ec;
   border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0),0 0 8px rgb(82, 168, 236);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0),0 0 8px rgb(82, 168, 236);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0),0 0 8px rgb(82, 168, 236);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
@@ -434,8 +431,11 @@ textarea:focus {
 input.form_error,
 textarea.form_error,
 select.form_error {
-  color: #B94A48;
-  border-color: #B94A48;
+  color: #b94a48;
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -444,15 +444,21 @@ input.form_error:focus,
 textarea.form_error:focus,
 select.form_error:focus {
   border-color: #953b39;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #D59392;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #D59392;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #D59392;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #d59392;
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #d59392;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 input.form_success,
 textarea.form_success,
 select.form_success {
   color: #468847;
   border-color: #468847;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -461,15 +467,21 @@ input.form_success:focus,
 textarea.form_success:focus,
 select.form_success:focus {
   border-color: #356635;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ABA7B;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ABA7B;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ABA7B;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7aba7b;
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7aba7b;
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7aba7b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
 }
 input.form_info,
 textarea.form_info,
 select.form_info {
-  color: #3A87AD;
-  border-color: #3A87AD;
+  color: #3a87ad;
+  border-color: #3a87ad;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -477,16 +489,22 @@ select.form_info {
 input.form_info:focus,
 textarea.form_info:focus,
 select.form_info:focus {
-  border-color: #2D6987;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7AB5D3;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7AB5D3;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7AB5D3;
+  border-color: #2d6987;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7ab5d3;
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7ab5d3;
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #7ab5d3;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
 }
 input.form_warning,
 textarea.form_warning,
 select.form_warning {
-  color: #C09853;
-  border-color: #C09853;
+  color: #c09853;
+  border-color: #c09853;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -494,18 +512,24 @@ select.form_warning {
 input.form_warning:focus,
 textarea.form_warning:focus,
 select.form_warning:focus {
-  border-color: #A47E3C;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #DBC59E;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #DBC59E;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #DBC59E;
+  border-color: #a47e3c;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #dbc59e;
+  -moz-box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #dbc59e;
+  box-shadow: inset 0 1px 1px rgb(0, 0, 0), 0 0 6px #dbc59e;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
 }
 input.form_disabled {
-  color: #999999;
-  border-color: #CCCCCC;
+  color: #999;
+  border-color: #ccc;
   background-color: #fcfcfc;
   cursor: not-allowed !important;
   overflow: hidden;
   white-space: nowrap;
+  -webkit-box-shadow: inset 0 1px 2px #000000;
+  -moz-box-shadow: inset 0 1px 2px #000000;
+  box-shadow: inset 0 1px 2px #000000;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.024);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.024);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.024);
