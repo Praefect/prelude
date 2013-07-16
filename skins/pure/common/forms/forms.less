@@ -70,8 +70,6 @@ label {
 		height: 2em;
 		padding: 0.3em 0.6em;
 		font-weight: bold;
-		// border: 1px solid @input-decorate-borderColor;
-		// background: @input-decorate-bgColor;
 		text-align: center;
 		vertical-align: top;	
 		letter-spacing: normal;	
@@ -185,7 +183,7 @@ legend {
     padding: 0.3em 0;
     color: #333;
     font-size: 125%;
-   	border-bottom: 1px solid #E5E5E5;
+   	border-bottom: 1px solid #e5e5e5;
 }
 
 button,
@@ -197,22 +195,16 @@ input[type="button"] {
 	line-height: normal;
 	padding: 0.5em 1.5em;
 	font-size: 100%;
+    color: white;
 	border: 0 none transparent;
 	.border-radius(2px);
-	background-color: #e6e6e6;
+    background-color: #0078e7;
 	vertical-align: baseline;
 	.transition(box-shadow 0.1s linear);
-}
-
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-
 	&:hover {
 		#gradient > .vertical-three-colors(transparent,#000,40%,#000);		
 		#gradient > .vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
-		background-color: #E6E6E6;
+		background-color: #0078e7;
 	}
 	&:active {
 		.inner-shadow(~"0 0 0 1px #000, inset 0 0 6px #000");		
@@ -220,13 +212,14 @@ input[type="button"] {
 	}
 }
 
-.notice {
-    background-color: #61B842;
-    color: white;
-    &:hover {
-		#gradient > .vertical-three-colors(transparent,#000,40%,#000);    	
-		#gradient > .vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
-		background-color: #61B842;
+.form-button {
+	color: #000;
+	color: rgba(0, 0, 0, 0.8);
+	background-color: #e6e6e6;
+	&:hover {
+		color: #000;
+		color: rgba(0, 0, 0, 0.8);
+		background-color: #e6e6e6;
 	}
 }
 
@@ -255,7 +248,7 @@ input[type="button"] {
 }
 
 .form-aligned .form-checkbox {
-	.inline-block();
+	display: block;
 	margin: 0.5em 0;
     white-space: nowrap;
 }
@@ -280,14 +273,18 @@ input[type="button"] {
 	z-index: 2;
 }
 
-.form-group input:first-child {
+.form-group .form-input-first {
     top: 1px;
     margin: 0;
     padding: 10px;
 	.border-radius(4px 4px 0 0);
 }
 
-.form-group input:last-child {
+.form-group .form-input-between {
+	.border-radius(0);
+}
+
+.form-group .form-input-last {
     top: -2px;
 	.border-radius(0 0 4px 4px);
 }
@@ -312,7 +309,6 @@ input[type="button"] {
     letter-spacing: -0.31em;
     div {
     	.inline-block();
-    	margin-right: -1px;
     	.box-sizing(border-box);
     }
 }

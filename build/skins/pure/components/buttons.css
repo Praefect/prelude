@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  font-weight: normal;
   text-align: center;
   vertical-align: baseline;
   -webkit-user-drag: none;
@@ -35,6 +36,7 @@
   *line-height: normal;
   color: #000;
   color: rgba(0, 0, 0, 0.8);
+  font-family: "proxima-nova", sans-serif;
   font-size: 100%;
   background-color: #e6e6e6;
   border: 0 none transparent;
@@ -86,6 +88,9 @@
 .button_primary {
   color: white;
   background-color: #0078e7;
+}
+.button_primary:hover {
+  color: white;
 }
 .button_mini {
   font-size: 70%;
