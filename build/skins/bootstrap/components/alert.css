@@ -2,41 +2,49 @@
 .alert-error,
 .alert-success,
 .alert-info {
-  padding: 0.5em 1em;
+  padding: 0.5em 2.1875em 0.5em 0.875em;
   margin-bottom: 0.5rem;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .alert-warning {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #fbeed5;
 }
-.alert-warning:hover {
-  color: #a47e3c;
-}
 .alert-error {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #eed3d7;
-}
-.alert-error:hover {
-  color: #953b39;
 }
 .alert-success {
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
-.alert-success:hover {
-  color: #356635;
-}
 .alert-info {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
-.alert-info:hover {
-  color: #2d6987;
+.alert-close {
+  position: relative;
+  float: right;
+  right: -21px;
+  top: -2px;
+  padding: 0;
+  line-height: 20px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+.alert-close:hover,
+.alert-close:focus {
+  opacity: 0.4;
 }

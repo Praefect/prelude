@@ -52,6 +52,7 @@
                 <li>
                     <label class="disabled" for="disabledField">Disabled Field</label>
                     <input type="text" disabled="disabled" class="form_disabled" placeholder="Disabled" />
+                    <span class="form_disabled form_xlarge">Disabled Field</span>
                 </li>
 
                 <li>
@@ -78,7 +79,7 @@
                 <li>
                     <label for="">Input With a prefix</label>
                     <div class="form-prepend">
-                        <span class="form_prepend">#</span>
+                        <span class="form_prepend form_first">#</span>
                         <input type="text" />
                     </div>
                 </li>
@@ -86,35 +87,35 @@
                     <label for="">Input With a postfix</label>
                      <div class="form-append">
                         <input type="text" />
-                        <span class="form_append">.com</span>
+                        <span class="form_append form_last">.com</span>
                     </div>
                 </li>
                 <li>
                     <label for="">Input With a postfix</label>
                      <div class="form-prepend form-append">
-                        <span class="form_prepend">#</span>
+                        <span class="form_prepend form_first">#</span>
                         <input type="text" />
-                        <span class="form_append">.com</span>
+                        <span class="form_append form_last">.com</span>
                     </div>
                 </li>
                 <li>
                     <label for="">Buttons instead of text</label>
                      <div class="form-append">
-                        <input class="span2" id="appendedInputButton" type="text">
-                        <button class="button form_append" type="button">Go!</button>
+                        <input class="form_span2" id="appendedInputButton" type="text">
+                        <button class="button form_append form_last" type="button">Go!</button>
                     </div>
                     <div class="form-append">
-                        <input class="span2" id="appendedInputButtons" type="text">
+                        <input class="form_span2" id="appendedInputButtons" type="text">
                         <button class="button form_append" type="button">Search</button>
-                        <button class="button form_append" type="button">Options</button>
+                        <button class="button form_append form_last" type="button">Options</button>
                     </div>
                 </li>
                 <li>
                     <label for="">Button dropdowns</label>
                     <div class="form-append">
-                        <input id="appendedDropdownButton" class="span2" type="text">
+                        <input id="appendedDropdownButton" class="form_span2" type="text">
                         <div class="form-button-group">
-                            <button class="button form_append form-dropdown-toggle" data-toggle="dropdown">
+                            <button class="button form_append form-dropdown-toggle form_last" data-toggle="dropdown">
                                 Action
                                 <span class="form-caret"></span>
                             </button>
@@ -141,12 +142,22 @@
                     <input type="text" class="form_medium form-search">
                     <button type="submit" class="button">Search</button>
                 </li>
+                <li class="form_inline">
+                     <div class="form-append">
+                        <input type="text" class="form_span2 form-search">
+                        <button type="submit" class="button form_append form_last form-search">Search</button>
+                    </div>
+                    <div class="form-prepend">
+                        <button type="submit" class="button form_prepend form_first form-search">Search</button>
+                        <input type="text" class="form_span2 form-search">
+                    </div>
+                </li>
 
                 <li class="form_inline">
                     <label style="display: block">Inline form</label>
                     <input type="text" class="form_small" placeholder="Email">
                     <input type="password" class="form_small" placeholder="Password">
-                    <label class="checkbox">
+                    <label class="form-checkbox">
                         <input type="checkbox"> Remember me
                     </label>
                     <button type="submit" class="button">Sign in</button>
@@ -196,14 +207,14 @@
 
                 <li class="section">Checkboxes</li>
                 <li>
-                    <label for="regularCheckbox">
+                    <label for="regularCheckbox" class="form-checkbox">
                         <input type="checkbox" value="checkbox 1" id="regularCheckbox" />
                         <span>Regular Checkbox</span>
                     </label>
                 </li>
 
                 <li>
-                    <label for="secondRegularCheckbox">
+                    <label for="secondRegularCheckbox" class="form-checkbox">
                         <input type="checkbox" value="checkbox 2" id="secondRegularCheckbox" />
                         <span>Regular Checkbox</span>
                     </label>
@@ -222,14 +233,14 @@
                 </li>
                 <li class="section">Radio Buttons</li>
                 <li>
-                    <label for="regularRadio">
+                    <label for="regularRadio" class="form-radio">
                         <input type="radio" value="radio 1" id="regularRadio" name="radios" />
                         <span>Regular Radio</span>
                     </label>
                 </li>
 
                 <li>
-                    <label for="secondRegularRadio">
+                    <label for="secondRegularRadio" class="form-radio">
                         <input type="radio" value="radio 2" id="secondRegularRadio" name="radios" />
                         <span>Regular Radio</span>
                     </label>
@@ -252,6 +263,47 @@
                     <input type="submit" value="Submit" />
                     <input type="submit" value="Reset" />
                     <input type="button" value="Button" />
+                    <br />
+                    <button type="submit" class="button form-button-primary">Save changes</button>
+                    <button type="button" class="button">Cancel</button>
+                </li>
+                <li>Inputs</li>
+                <li class="form-sizes">
+                    <input class="form_block" type="text" placeholder=".form_block">
+                </li>
+                <li class="form-sizes">
+                    <input class="form_mini" type="text" placeholder=".form_mini">
+                    <input class="form_small" type="text" placeholder=".form_small">
+                    <input class="form_medium" type="text" placeholder=".form_medium">
+                    <input class="form_large" type="text" placeholder=".form_large">
+                    <input class="form_xlarge" type="text" placeholder=".form_xlarge">
+                    <input class="form_xxlarge" type="text" placeholder=".form_xxlarge">
+                </li>   
+                <li class="form-sizes">
+                    <input class="form_span1" type="text" placeholder=".form_span1">
+                    <input class="form_span2" type="text" placeholder=".form_span2">
+                    <input class="form_span3" type="text" placeholder=".form_span3">
+                    <select class="form_span1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="form_span2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="form_span3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
                 </li>
             </ul>
         </form>
