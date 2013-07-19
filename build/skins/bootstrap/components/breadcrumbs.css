@@ -1,0 +1,56 @@
+.breadcrumbs {
+  overflow: hidden;
+}
+.breadcrumbs li {
+  display: inline-block;
+  list-style: none outside none;
+}
+.ie7 .breadcrumbs li {
+  display: inline;
+  zoom: 1;
+}
+.breadcrumbs.with-divider li:first-child:before {
+  content: " ";
+}
+.breadcrumbs.with-divider li:before {
+  content: "/";
+}
+.breadcrumbs {
+  background: #f5f5f5;
+  margin-left: 0;
+  padding: 8px 15px;
+  font-size: 0.875em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  list-style: none outside none;
+}
+.breadcrumbs li {
+  margin: 0;
+  padding-right: 0.3125em;
+  line-height: 20px;
+  color: #0088cc;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+.breadcrumbs .breadcrumbs_disabled {
+  color: #999999;
+  cursor: default;
+}
+.breadcrumbs.with-divider li:first-child:before {
+  padding-right: 0;
+}
+.breadcrumbs.with-divider li:before {
+  color: #cccccc;
+  padding-right: 0.6em;
+}
+.breadcrumbs a {
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.breadcrumbs-divider {
+  padding-left: 0.5em;
+  color: #cccccc;
+}

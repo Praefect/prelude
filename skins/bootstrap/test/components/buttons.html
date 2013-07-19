@@ -9,9 +9,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../../build/common/reset.css">
-    <link rel="stylesheet" href="../../build/common/typography.css">
-    <link rel="stylesheet" href="../../build/components/buttons.css">
+    <link rel="stylesheet" href="../../../../build/common/reset.css">
+    <link rel="stylesheet" href="../../../../build/common/typography.css">
+    <link rel="stylesheet" href="../../../../build/skins/bootstrap/components/buttons.css">
     <style>
         body {
             padding: 40px;
@@ -24,47 +24,107 @@
         <table class="bordered width-100">
             <tbody>
                 <tr>
+                    <td colspan="2"><b>Default buttons</b></td>
+                </tr>
+                <tr>
+                    <td><a class="button" href="#">Default</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_primary" href="#">Primary</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_info" href="#">Info</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_success" href="#">Success</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_warning" href="#">Warning</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_danger" href="#">Danger</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_inverse" href="#">Inverse</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_link" href="#">Link</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+
+                <tr>
                     <td colspan="2"><b>Sizes</b></td>
                 </tr>
                 <tr>
-                    <td><a class="button is-mini" href="#">mini</a></td>
-                    <td><code>.button</code> and <code>.is-mini</code></td>
+                    <td><a class="button button_mini" href="#">mini</a></td>
+                    <td><code>.button</code> and <code>.button_mini</code></td>
                 </tr>
                 <tr>
-                    <td><a class="button is-small" href="#">Small</a></td>
-                    <td><code>.button</code> and <code>.is-small</code></td>
+                    <td><a class="button button_small" href="#">Small</a></td>
+                    <td><code>.button</code> and <code>.button_small</code></td>
                 </tr>
                 <tr>
                     <td><button class="button">Normal</button></td>
                     <td><code>.button</code></td>              
                 </tr>
                 <tr>
-                    <td><a class="button is-large" href="#">large</a></td>
-                    <td><code>.button</code> and <code>.is-large</code></td> 
+                    <td><a class="button button_large" href="#">large</a></td>
+                    <td><code>.button</code> and <code>.button_large</code></td> 
                 </tr>
                 <tr>
                     <td colspan="2"><b>Styles</b></td>
                 </tr> 
                 <tr>
-                    <td><input type="submit" value="Radius" class="button is-radius"></td>
-                    <td><code>.button</code> and <code>.is-radius</code></td>
+                    <td><input type="submit" value="Radius" class="button button_radius"></td>
+                    <td><code>.button</code> and <code>.button_radius</code></td>
                 </tr>   
                 <tr>
-                    <td><input type="submit" value="Round" class="button is-round"></td>
-                    <td><code>.button</code> and <code>.is-round</code></td>
+                    <td><input type="submit" value="Round" class="button button_round"></td>
+                    <td><code>.button</code> and <code>.button_round</code></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Active" class="button is-active"></td>
-                    <td><code>.button</code> and <code>.is-active</code></td>
+                    <td><input type="submit" value="Active" class="button button_active"></td>
+                    <td><code>.button</code> and <code>.button_active</code></td>
                 </tr>   
                 <tr>
-                    <td><input type="submit" value="Disabled" class="button is-disabled"></td>
-                    <td><code>.button</code> and <code>.is-disabled</code></td>
+                    <td><input type="submit" value="Disabled" class="button button_disabled"></td>
+                    <td><code>.button</code> and <code>.button_disabled</code></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Full Width" class="button is-full"></td>
-                    <td><code>.button</code> and <code>.is-full</code></td>
+                    <td>    
+                        <a href="#" class="button button_large button_primary button_disabled">Primary link</a>
+                        <a href="#" class="button button_large button_disabled">Link</a>
+                    </td>
+                    <td><code>.button</code> and <code>.button_disabled</code></td>
                 </tr>
+                <tr>
+                    <td>    
+                        <button href="#" class="button button_large button_primary button_disabled">Primary button</button>
+                        <button href="#" class="button button_large button_disabled">Link</button>
+                    </td>
+                    <td><code>.button</code> and <code>.button_disabled</code></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Full Width" class="button button_full"></td>
+                    <td><code>.button</code> and <code>.button_full</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="button button_large button_block button_primary" type="button" style="margin-bottom: 5px;">Block level button</button>
+                        <button class="button button_large button_block" type="button">Block level button</button>
+                    </td>
+                    <td>
+                        <code>.button</code> and <code>.button_block</code>
+                    </td>
+                </tr>
+
                 <tr>
                     <td colspan="2"><b>Multiple tags</b></td>
                 </tr> 
