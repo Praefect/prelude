@@ -24,7 +24,7 @@
     }
 }
 
-.button::-moz-focus-inner {
+.button::-moz-focus-inner {  // Firefox vertical align
     border: 0;
     padding: 0;
     outline: 0;
@@ -35,10 +35,7 @@
 // ==========================================================================
 // Core
 .button {
-    // padding: 4px 12px;
     padding: 0.5em 1.5em;
-    line-height: normal;
-    *line-height: normal;
     color: #000;
     color: rgba(0,0,0,0.8);
     font-family: "proxima-nova",sans-serif;
@@ -52,14 +49,13 @@
         color: #000;
         color: rgba(0,0,0,0.8);
         text-decoration: none;
-        #gradient > .vertical-three-colors(transparent,#000,40%,#000);
+        // #gradient > .vertical-three-colors(transparent,#000,40%,#000);
         #gradient > .vertical-three-colors(transparent,rgba(0,0,0,0.05),40%,rgba(0,0,0,0.1));
     }
 
     // Active state
     &.button_active,
     &:active {
-        .inner-shadow(~"0 0 0 1px #000, inset 0 0 6px #000");
         .inner-shadow(~"0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 6px rgba(0, 0, 0, 0.2)");
         outline: 0;
     }
@@ -112,8 +108,7 @@
 //Button groups
 .button-group {
     .inline-block();
-    // margin-right: 2px;
-    .px-to-rem('margin-right', @base-fontSize * 0.33);
+    .px-to-rem('margin-right', 10);
     vertical-align: bottom;
     &:after {
         clear: both;
@@ -124,7 +119,7 @@
     }
     > .button, > input {
         float: left;
-        margin-left: -1px;
+        margin-left: -1px; //border-width=1px;
     }
 }
 
@@ -135,7 +130,6 @@
 .button_secondary {
     color: white;
     .border-radius(4px);
-    text-shadow: 0 1px 1px #000;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     &:hover {
         color: white;
@@ -183,12 +177,11 @@
     .px-to-rem('margin-bottom', -4);
     .px-to-rem('margin-top', -4);
     font-size: 1.33333em;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding-bottom: 0.1875em;
+    padding-top: 0.1875em;
     vertical-align: middle;
     &:before {
         font-size: 1.33333em;
-        vertical-align: -10%;
     }
     &:hover {
         color: #000;

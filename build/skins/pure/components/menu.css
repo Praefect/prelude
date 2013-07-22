@@ -3,8 +3,8 @@
 }
 .menu a {
   display: block;
-  font-size: 100%;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.5em;
   text-decoration: none;
 }
 .menu ul {
@@ -28,18 +28,16 @@ div.menu {
 .menu a {
   padding: 0.3em 1.25em;
   color: #777;
-  font-size: 100%;
+  font-size: 1em;
   white-space: nowrap;
 }
 .menu .menu-heading {
   display: block;
   line-height: 1.5em;
   margin: 0;
-  margin-top: 7.2px;
-  margin-top: 0.45rem;
   padding: 0.3em 1.25em;
   color: #565d64;
-  font-size: 90%;
+  font-size: 0.9em;
   border-bottom: 1px solid #dfdfdf;
   text-transform: uppercase;
   text-decoration: none;
@@ -49,7 +47,7 @@ div.menu {
 .menu .menu_sub > a:after {
   content: "▾";
   position: relative;
-  padding-left: 10px;
+  padding-left: 0.625em;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
 }
 .menu li:hover > a {
@@ -64,19 +62,24 @@ div.menu {
 .menu .menu_header:hover > a {
   color: #aaa;
 }
-.menu_selected a {
-  color: #000;
+.menu .menu_disabled:hover {
+  color: #bfbfbf;
+  background-color: transparent;
+  background-image: none;
 }
-.menu_disabled > a {
+.menu .menu_disabled > a {
   color: #bfbfbf;
   border-color: transparent;
   background-image: none;
   cursor: default;
 }
-.menu_disabled > a:hover {
+.menu .menu_disabled > a:hover {
   color: #bfbfbf;
   background-color: transparent;
   background-image: none;
+}
+.menu_selected a {
+  color: #000;
 }
 .menu_horizontal {
   display: inline-block;
@@ -109,7 +112,7 @@ div.menu {
 }
 .menu_horizontal .menu_sub ul {
   position: absolute;
-  top: 100%;
+  top: 2em;
   left: 0;
   padding: 0;
   margin: 0;
@@ -117,6 +120,8 @@ div.menu {
   border: 1px solid #b7b7b7;
 }
 .menu_horizontal .menu_sub .menu-heading {
+  margin-top: 7.2px;
+  margin-top: 0.45rem;
   border-bottom: 1px solid #dfdfdf;
 }
 .menu_horizontal .menu_sub .menu_sub ul {
@@ -129,7 +134,7 @@ div.menu {
   content: "▸";
   position: relative;
   float: right;
-  top: -5px;
+  top: -0.25em;
   margin-right: -10px;
   margin-right: -0.625rem;
   margin-top: -20px;
@@ -139,14 +144,19 @@ div.menu {
 .menu_list a {
   text-align: left;
 }
-.menu.menu_open {
-  margin-top: 2em;
+.menu.menu_vertical {
+  margin-top: 32px;
+  margin-top: 2rem;
   width: 40%;
   border: 1px solid #b7b7b7;
   background-color: #fff;
   visibility: visible;
   z-index: 2;
 }
-.menu.menu_open > ul {
+.menu.menu_vertical > ul {
   margin-left: 0;
+}
+.menu.menu_vertical .menu-heading {
+  margin-top: 7.2px;
+  margin-top: 0.45rem;
 }

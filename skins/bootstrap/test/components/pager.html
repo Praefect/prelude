@@ -9,12 +9,25 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../../build/common/reset.css">
-    <link rel="stylesheet" href="../../build/common/typography.css">
-    <link rel="stylesheet" href="../../build/components/pager.css">
+    <link rel="stylesheet" href="../../../../build/common/reset.css">
+    <link rel="stylesheet" href="../../../../build/common/typography.css">
+    <link rel="stylesheet" href="../../../../build/skins/bootstrap/components/pager.css">
     <style>
         body {
             padding: 40px;
+        }
+        .type-test {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .type-test:before {
+            content: "";
+            display: table;
+            line-height: 0;
+        }
+        .type-test:after {
+            clear: both;
         }
     </style>
 </head>
@@ -25,5 +38,25 @@
             <li><a href="#">Next</a></li>
         </ul>
     </div>
+    <div class="type-test" id="pager">
+        <ul class="pager">
+            <li class="pager pager-previous">
+                <a href="#">&larr; Older</a>
+            </li>
+            <li class="pager pager-next">
+                <a href="#">Newer &rarr;</a>
+            </li>
+        </ul>
+    </div>  
+    <div class="type-test" id="pager">
+        <ul class="pager">
+            <li class="pager pager-previous pager_disabled">
+                <a href="#">&larr; Older</a>
+            </li>
+            <li class="pager pager-next pager_disabled">
+                <a href="#">Newer &rarr;</a>
+            </li>
+        </ul>
+    </div>  
 </body>
 </html>

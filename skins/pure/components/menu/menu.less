@@ -4,14 +4,11 @@
 // ==========================================================================
 .menu {
 	list-style: none;
-	// li {
-
-	// }
 
 	a {
 		display: block;
-   		font-size: 100%;
- 	    line-height: 1.5;
+   		font-size: 1em;
+ 	    line-height: 1.5em;
 		text-decoration: none;
 	}
 
@@ -45,7 +42,7 @@ div.menu {
 	a {
 		padding: 0.3em 1.25em;
 		color: #777;
-		font-size: 100%;
+		font-size: 1em;
 		white-space:nowrap;  
 	}
 
@@ -53,10 +50,9 @@ div.menu {
 		display: block;
 		line-height: 1.5em;
 	    margin: 0;
-	    .px-to-rem('margin-top',7.2);
 	    padding: 0.3em 1.25em;
 	    color: #565d64;
-	    font-size: 90%;
+	    font-size: 0.9em;
 	    border-bottom: 1px solid #dfdfdf;
 	    text-transform: uppercase;
 	    text-decoration: none;
@@ -68,7 +64,7 @@ div.menu {
 		> a:after {
 			content: "▾";
 			position: relative;
-			padding-left: 10px;
+			padding-left: 0.625em;
 		    font-family: 'Lucida Grande','Lucida Sans Unicode','DejaVu Sans',sans-serif;
 		}
 	}
@@ -92,24 +88,29 @@ div.menu {
 			color: #aaa;
 		}
 	}
+
+	.menu_disabled {  //to void being covered
+		&:hover {
+			color: #bfbfbf;
+		   	background-color: transparent;
+		   	background-image: none;
+		}
+		> a {
+		    color: #bfbfbf;
+		    border-color: transparent;
+		    background-image: none;
+		    cursor: default;
+		    &:hover {
+		    	color: #bfbfbf;
+		    	background-color: transparent;
+		    	background-image: none;
+		    }
+		}
+	}
 }
 
 .menu_selected a {
     color: #000;
-}
-
-.menu_disabled {
-	> a {
-	    color: #bfbfbf;
-	    border-color: transparent;
-	    background-image: none;
-	    cursor: default;
-	    &:hover {
-	    	color: #bfbfbf;
-	    	background-color: transparent;
-	    	background-image: none;
-	    }
-	}
 }
 
 .menu_horizontal {
@@ -123,14 +124,14 @@ div.menu {
 		margin: 0;
 	}
 	.menu-heading {
-		.inline-block();
+		.inline-block();		
 		border-bottom: none;
 	}
 	.menu_sub {
 		position: relative;
 		ul {
 			position: absolute;
-			top: 100%;
+			top: 2em;
 			left: 0;
 			padding: 0;
 			margin: 0;
@@ -139,6 +140,7 @@ div.menu {
 		}
 		
 		.menu-heading {
+	    	.px-to-rem('margin-top',7.2);
 			border-bottom: 1px solid #dfdfdf;
 		}
 
@@ -154,7 +156,7 @@ div.menu {
 				content: "▸";
 	    		position: relative;
 	    		float: right;
-	    		top: -5px;
+	    		top: -0.25em;
 	    		.px-to-rem('margin-right',-10);
 	    		.px-to-rem('margin-top',-20);
 			    font-family: 'Lucida Grande','Lucida Sans Unicode','DejaVu Sans',sans-serif;
@@ -170,14 +172,17 @@ div.menu {
 	}	
 }
 
-.menu.menu_open {
-    margin-top: 2em;
+.menu.menu_vertical {
+    .px-to-rem('margin-top',32);
     width: 40%;
     border: 1px solid #b7b7b7;
     background-color: #fff;
-    visibility: visible;
+    visibility: visible;  //element can be seen
     z-index: 2;
     >ul {
     	margin-left: 0;
+    }
+    .menu-heading {
+	    .px-to-rem('margin-top',7.2);
     }
 }

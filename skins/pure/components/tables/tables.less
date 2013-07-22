@@ -6,9 +6,7 @@
 // ==========================================================================
 
 .table {
-    max-width: 100%;
     border-collapse: collapse;
-    // border-spacing: 0;
     empty-cells: show;
     // Cells
     th,
@@ -33,8 +31,8 @@
     border: 1px solid #cbcbcb;
     // Cells
     thead {
-        background-color: #e0e0e0;
         color: #000;
+        background-color: #e0e0e0;
         text-align: left;
         vertical-align: bottom;
         white-space: nowrap;
@@ -42,12 +40,11 @@
 
     th,
     td {
-        // padding: 8px;
         border-left: 1px solid #cbcbcb;
         border-width: 0 0 0 1px;
         margin: 0;
         overflow: visible;
-        padding: 6px 12px;
+        padding: 0.375em 0.75em;
     }
     th {
         font-weight: bold;
@@ -92,7 +89,6 @@
 .table_bordered {
     border: 1px solid @table-borerColor;
     border-collapse: separate; // Done so we can round those corners!
-    // *border-collapse: collapse; // IE7 can't round corners anyway
     border-left: 0;
     th,
     td {
@@ -127,7 +123,6 @@
 .table_condensed {
     th,
     td {
-        // padding: 4px 5px;
         padding: 0.3em 0.4em;
     }
 }

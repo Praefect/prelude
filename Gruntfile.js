@@ -85,7 +85,10 @@ module.exports = function(grunt) {
       components: [
         'alert',
         'breadcrumbs',
-        'buttons'
+        'buttons',
+        'label',
+        'pager',
+        'pagination'
       ]
     }
   };
