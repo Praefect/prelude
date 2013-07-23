@@ -87,6 +87,7 @@ module.exports = function(grunt) {
         'breadcrumbs',
         'buttons',
         'label',
+        'menu',
         'pager',
         'pagination'
       ]

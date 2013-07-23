@@ -18,7 +18,7 @@
 .breadcrumbs {
   background: #f5f5f5;
   margin-left: 0;
-  padding: 8px 15px;
+  padding: 0.571em 1.071em;
   font-size: 0.875em;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -28,7 +28,7 @@
 .breadcrumbs li {
   margin: 0;
   padding-right: 0.3125em;
-  line-height: 20px;
+  line-height: 1.428em;
   color: #0088cc;
   text-shadow: 0 1px 0 #FFFFFF;
 }
