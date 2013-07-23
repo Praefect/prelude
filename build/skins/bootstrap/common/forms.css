@@ -6,7 +6,6 @@ form input[type="submit"],
 form input[type="reset"],
 form input[type="button"] {
   display: inline-block;
-  letter-spacing: normal;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
