@@ -89,7 +89,10 @@ module.exports = function(grunt) {
         'label',
         'menu',
         'pager',
-        'pagination'
+        'pagination',
+        'progress',
+        'tab',
+        'tables'
       ]
     }
   };
