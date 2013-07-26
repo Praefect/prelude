@@ -1,0 +1,70 @@
+.breadcrumbs {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.breadcrumbs li {
+  display: inline-block;
+  list-style: none outside none;
+}
+.ie7 .breadcrumbs li {
+  display: inline;
+  zoom: 1;
+}
+.breadcrumbs {
+  display: block;
+  background-color: #f5f5f5;
+  margin-left: 0;
+  padding: 0.5625em 0.875em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+  list-style: none outside none;
+}
+.breadcrumbs li {
+  float: left;
+  margin: 0;
+  font-size: 0.6875em;
+  text-transform: uppercase;
+}
+.breadcrumbs li:before {
+  content: "/";
+  position: relative;
+  top: 1px;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  color: #aaaaaa;
+}
+.breadcrumbs li:first-child:before {
+  content: " ";
+  margin: 0;
+}
+.breadcrumbs a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs_disabled a,
+.breadcrumbs_disabled a:hover {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+}
+.breadcrumbs_current a,
+.breadcrumbs_current a:hover {
+  color: #333333;
+  text-decoration: none;
+  cursor: default;
+}
+.breadcrumbs_radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}

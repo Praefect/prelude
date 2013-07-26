@@ -94,6 +94,23 @@ module.exports = function(grunt) {
         'tab',
         'tables'
       ]
+    },
+    fondation: {
+      common: [
+        'forms'
+      ],
+      components: [
+        'alert',
+        'breadcrumbs',
+        'buttons',
+        'label',
+        'menu',
+        'pager',
+        'pagination',
+        'progress',
+        'tab',
+        'tables'
+      ]
     }
   };
 

@@ -1,0 +1,74 @@
+@import "init.less";
+// ==========================================================================
+// Breadcrumbs
+// ==========================================================================
+.breadcrumbs {
+    overflow: hidden;
+    .box-sizing(border-box);
+    li {
+        .inline-block();
+        list-style: none outside none;
+    }
+}
+
+// ==========================================================================
+// Breadcrumbs
+// ==========================================================================
+.breadcrumbs {
+    display: block;
+    background-color: @breadcrumbs-bgColor;
+    margin-left: 0;
+    padding: 0.5625em 0.875em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @breadcrumbs-borderColor;
+    list-style: none outside none;
+    li {
+        float: left;
+        margin: 0;
+        font-size: 0.6875em;
+        text-transform: uppercase; 
+        &:before {
+            content: "/";
+            position: relative;
+            top: 1px;
+            .px-to-rem('margin-right',15);
+            .px-to-rem('margin-left',15);
+            color: @breadcrumbs-dividerColor;
+        }       
+        &:first-child:before {
+            content: " ";
+            margin: 0;
+        }
+    }
+
+    a {
+        color: #2ba6cb;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+  
+.breadcrumbs_disabled {
+    a,
+    a:hover {
+        color: @breadcrumbs-disable-Color;
+        text-decoration: none;
+        cursor: default;
+    }
+}
+
+.breadcrumbs_current {
+    a,
+    a:hover {
+        color: @breadcrumbs-current-Color;
+        text-decoration: none;
+        cursor: default;
+    }
+}
+
+.breadcrumbs_radius {
+    .border-radius(3px);
+}
