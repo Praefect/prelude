@@ -31,34 +31,17 @@
                     <td><code>.button</code></td>
                 </tr>
                 <tr>
-                    <td><a class="button button_primary" href="#">Primary</a></td>
+                    <td><a class="button button_disabled button_round" href="#">Disabled.Round</a></td>
                     <td><code>.button</code></td>
                 </tr>
                 <tr>
-                    <td><a class="button button_info" href="#">Info</a></td>
+                    <td><a class="button button_custom" href="#">Custom</a></td>
                     <td><code>.button</code></td>
                 </tr>
                 <tr>
-                    <td><a class="button button_success" href="#">Success</a></td>
+                    <td><a class="button button_success button_radius" href="#">Success</a></td>
                     <td><code>.button</code></td>
                 </tr>
-                <tr>
-                    <td><a class="button button_warning" href="#">Warning</a></td>
-                    <td><code>.button</code></td>
-                </tr>
-                <tr>
-                    <td><a class="button button_danger" href="#">Danger</a></td>
-                    <td><code>.button</code></td>
-                </tr>
-                <tr>
-                    <td><a class="button button_inverse" href="#">Inverse</a></td>
-                    <td><code>.button</code></td>
-                </tr>
-                <tr>
-                    <td><a class="button button_link" href="#">Link</a></td>
-                    <td><code>.button</code></td>
-                </tr>
-
                 <tr>
                     <td colspan="2"><b>Sizes</b></td>
                 </tr>
@@ -90,82 +73,183 @@
                     <td><code>.button</code> and <code>.button_round</code></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Active" class="button button_active"></td>
-                    <td><code>.button</code> and <code>.button_active</code></td>
-                </tr>   
-                <tr>
-                    <td><input type="submit" value="Disabled" class="button button_disabled"></td>
-                    <td><code>.button</code> and <code>.button_disabled</code></td>
-                </tr>
-                <tr>
-                    <td>    
-                        <a href="#" class="button button_large button_primary button_disabled">Primary link</a>
-                        <a href="#" class="button button_large button_disabled">Link</a>
-                    </td>
-                    <td><code>.button</code> and <code>.button_disabled</code></td>
-                </tr>
-                <tr>
-                    <td>    
-                        <button href="#" class="button button_large button_primary button_disabled">Primary button</button>
-                        <button href="#" class="button button_large button_disabled">Link</button>
-                    </td>
-                    <td><code>.button</code> and <code>.button_disabled</code></td>
-                </tr>
-                <tr>
                     <td>
-                        <button class="button button_large button_block button_primary" type="button" style="margin-bottom: 5px;">Block level button</button>
+                        <button class="button button_large button_block" type="button" style="margin-bottom: 5px;">Block level button</button>
                         <button class="button button_large button_block" type="button">Block level button</button>
                     </td>
                     <td>
                         <code>.button</code> and <code>.button_block</code>
                     </td>
                 </tr>
-
-                <tr>
-                    <td colspan="2"><b>Multiple tags</b></td>
-                </tr> 
-                <tr>
-                    <td><button class="button">Form Button</button></td>
-                    <td><code>.button</code></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Input Submit Button" class="button"></td>
-                    <td><code>.button</code></td>
-                </tr>
-                <tr>
-                    <td><a class="button" href="#">Regular Button</a></td>
-                    <td><code>.button</code></td>
-                </tr> 
                 <tr>
                     <td colspan="2"><b>Button groups</b></td>
                 </tr> 
                 <tr>
                     <td><span class="button-group">
-                            <button class="button button_first">1</button>
-                            <button class="button button_between">2</button>
-                            <button class="button button_last">3</button>
+                            <button class="button button_small">1</button>
+                            <button class="button button_small">2</button>
+                            <button class="button button_small">3</button>
                         </span>
                         <span class="button-group">
-                            <input type="submit" value="button1" class="button button_first">
-                            <input type="submit" value="button2" class="button button_between">
-                            <input type="submit" value="button3" class="button button_last"> 
+                            <input type="submit" value="button1" class="button button_secondary button_radius button_first">
+                            <input type="submit" value="button2" class="button button_secondary">
+                            <input type="submit" value="button3" class="button button_secondary button_radius button_last"> 
                         </span>
                     </td>
                     <td><code>.button-group</code> &gt; <code>.button</code></td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="button-group_vertical">
-                            <button class="button button_top" type="button">1111</button>
-                            <button class="button button_between" type="button">2222</button>
-                            <button class="button button_between" type="button">3333</button>
-                            <button class="button button_bottom" type="button">4444</button>
-                        </span>
+                        <ul class="button-group button_column3">
+                            <li>
+                                <a class="button button_alert button_round button_first" href="#">Button 1</a>
+                            </li>
+                            <li>
+                                <a class="button button_alert" href="#">Button 2</a>
+                            </li>
+                            <li>
+                                <a class="button button_alert button_round button_last" href="#">Button 3</a>
+                            </li>
+                        </ul>
                     </td>
-                    <td><code>.button-group_vertical</code> &gt; <code>.button</code></td>
+                    <td><code>.button-group .button_column3</code> &gt; <code>.button .button_alert .button_round</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="button-group button_column3">
+                            <li>
+                                <input class="button button_success button_round button_first" type="submit" value="Button 1" />
+                            </li>
+                            <li>
+                                <input class="button button_success" type="submit" value="Button 2" />
+                            </li>
+                            <li>
+                                <input class="button button_success button_round button_last" type="submit" value="Button 3" />
+                            </li>
+                        </ul>
+                    </td>
+                    <td><code>.button-group .button_column3</code> &gt; <code>.button .button_alert .button_round</code></td>
                 </tr>
             </tbody>
         </table>
+        <a class="button button_mini button_dropdown" data-dropdown="drop" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_small button_secondary button_radius button_dropdown" data-dropdown="drop2" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop2" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_alert button_round button_dropdown" data-dropdown="drop3" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop3" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_success button_dropdown" data-dropdown="drop4" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop4" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_dropdown button_block" data-dropdown="drop5" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop5" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <hr />
+        <a class="button button_mini button_split" data-dropdown="drop" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_small button_secondary button_radius button_split" data-dropdown="drop2" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop2" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_alert button_round button_split" data-dropdown="drop3" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop3" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_success button_split" data-dropdown="drop4" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop4" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
