@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../../../../build/common/reset.css">
+    <link rel="stylesheet" href="../../../../build/common/typography.css">
+    <link rel="stylesheet" href="../../../../build/skins/foundation/components/buttons.css">
+    <style>
+        body {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+	<div class="type-test" id="buttons">
+        <h3>Basic buttons</h3>
+        <table class="bordered width-100">
+            <tbody>
+                <tr>
+                    <td colspan="2"><b>Default buttons</b></td>
+                </tr>
+                <tr>
+                    <td><a class="button" href="#">Default</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_disabled button_round" href="#">Disabled.Round</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_custom" href="#">Custom</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_success button_radius" href="#">Success</a></td>
+                    <td><code>.button</code></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Sizes</b></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_mini" href="#">mini</a></td>
+                    <td><code>.button</code> and <code>.button_mini</code></td>
+                </tr>
+                <tr>
+                    <td><a class="button button_small" href="#">Small</a></td>
+                    <td><code>.button</code> and <code>.button_small</code></td>
+                </tr>
+                <tr>
+                    <td><button class="button">Normal</button></td>
+                    <td><code>.button</code></td>              
+                </tr>
+                <tr>
+                    <td><a class="button button_large" href="#">large</a></td>
+                    <td><code>.button</code> and <code>.button_large</code></td> 
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Styles</b></td>
+                </tr> 
+                <tr>
+                    <td><input type="submit" value="Radius" class="button button_radius"></td>
+                    <td><code>.button</code> and <code>.button_radius</code></td>
+                </tr>   
+                <tr>
+                    <td><input type="submit" value="Round" class="button button_round"></td>
+                    <td><code>.button</code> and <code>.button_round</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="button button_large button_block" type="button" style="margin-bottom: 5px;">Block level button</button>
+                        <button class="button button_large button_block" type="button">Block level button</button>
+                    </td>
+                    <td>
+                        <code>.button</code> and <code>.button_block</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Button groups</b></td>
+                </tr> 
+                <tr>
+                    <td><span class="button-group">
+                            <button class="button button_small">1</button>
+                            <button class="button button_small">2</button>
+                            <button class="button button_small">3</button>
+                        </span>
+                        <span class="button-group">
+                            <input type="submit" value="button1" class="button button_secondary button_radius button_first">
+                            <input type="submit" value="button2" class="button button_secondary">
+                            <input type="submit" value="button3" class="button button_secondary button_radius button_last"> 
+                        </span>
+                    </td>
+                    <td><code>.button-group</code> &gt; <code>.button</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="button-group button_column3">
+                            <li>
+                                <a class="button button_alert button_round button_first" href="#">Button 1</a>
+                            </li>
+                            <li>
+                                <a class="button button_alert" href="#">Button 2</a>
+                            </li>
+                            <li>
+                                <a class="button button_alert button_round button_last" href="#">Button 3</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td><code>.button-group .button_column3</code> &gt; <code>.button .button_alert .button_round</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="button-group button_column3">
+                            <li>
+                                <input class="button button_success button_round button_first" type="submit" value="Button 1" />
+                            </li>
+                            <li>
+                                <input class="button button_success" type="submit" value="Button 2" />
+                            </li>
+                            <li>
+                                <input class="button button_success button_round button_last" type="submit" value="Button 3" />
+                            </li>
+                        </ul>
+                    </td>
+                    <td><code>.button-group .button_column3</code> &gt; <code>.button .button_alert .button_round</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="button button_mini button_dropdown" data-dropdown="drop" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_small button_secondary button_radius button_dropdown" data-dropdown="drop2" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop2" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_alert button_round button_dropdown" data-dropdown="drop3" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop3" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_success button_dropdown" data-dropdown="drop4" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop4" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_dropdown button_block" data-dropdown="drop5" href="#">Dropdown Button</a>
+        <br>
+        <ul id="drop5" class="button-dropdown" data-dropdown-content="">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <hr />
+        <a class="button button_mini button_split" data-dropdown="drop" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop" class="button-dropdown" data-dropdown-content="" style="left:5.203em;">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_small button_secondary button_radius button_split" data-dropdown="drop2" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop2" class="button-dropdown" data-dropdown-content="" style="left:6.384em;">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_alert button_round button_split" data-dropdown="drop3" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop3" class="button-dropdown" data-dropdown-content="" style="left:8.907em;">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+        <a class="button button_large button_success button_split" data-dropdown="drop4" href="#">Split Button<span data-dropdown="drop"></span></a>
+        <br>
+        <ul id="drop4" class="button-dropdown" data-dropdown-content="" style="left:12.322em;">
+            <li>
+                <a href="#">This is a link</a>
+            </li>
+            <li>
+                <a href="#">This is another</a>
+            </li>
+            <li>
+                <a href="#">Yet another</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

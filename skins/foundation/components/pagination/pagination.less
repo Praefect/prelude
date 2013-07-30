@@ -1,0 +1,78 @@
+@import "init.less";
+// ==========================================================================
+// Pagination
+// ==========================================================================
+.pagination {
+    display: block;
+    .box-sizing(border-box);
+    .clearfix();
+
+    li {
+        float: left;
+        display: inline;
+        line-height: 1.428em;
+        a {
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// Pagination
+// ==========================================================================
+.pagination {
+    >ul {
+        .inline-block();
+        height: 1.5em;
+        .px-to-rem('margin-left',-5);
+    }
+
+    li {
+        height: 1.5em;
+        .px-to-rem('margin-left',4.5);
+        color: @pagination-textColor;
+        font-size: @pagination-fontSize;
+        a { 
+            padding: 0.0625em 0.4375em;
+            color: #999;   
+            &:hover {
+                background-color:  @pagination-hover-bgColor;
+            }
+        }
+    }
+
+    .pagination_unavailable,
+    .pagination_disabled,
+    .pagination_active {
+        a,
+        a:hover {
+            color: @pagination-disable-textColor;
+            background-color: @pagination-disable-hover-bgColor;
+            cursor: default;
+        }            
+    }
+
+    .pagination_active {
+        a {
+            font-weight: bold;
+            color: @pagination-current-textColor;
+            background-color: @pagination-current-bgColor;
+            cursor: default;
+            &:hover {
+                color: @pagination-current-textColor;
+                background-color: @pagination-current-bgColor;
+            }
+        }        
+    }
+}
+
+// pagination position
+.pagination_centered {
+    text-align: center;
+}
+.pagination_right {
+    text-align: right;
+}

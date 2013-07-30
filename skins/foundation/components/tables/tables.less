@@ -1,0 +1,48 @@
+@import "init.less";
+// ==========================================================================
+// Tables
+// ==========================================================================
+// BASE TABLES
+// ==========================================================================
+
+.table {
+    max-width: 100%;
+    width: 100%;
+    .box-sizing(border-box);
+    // Cells
+    th,
+    td {
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+// ==========================================================================
+// Tables
+// ==========================================================================
+// BASE TABLES
+// ==========================================================================
+
+.table {    
+    .px-to-rem('margin-bottom',20);
+    border: 1px solid #ddd;
+    background-color: @table-bgColor;
+    border-collapse: collapse;
+    border-spacing: 0;
+    // Cells
+    thead {
+        font-weight: bold;
+        background-color: @table-thead-bgColor;
+    }
+    th,
+    td {
+        display: table-cell;
+        padding: 0.5625em 0.625em;
+        line-height: 1.125em;
+        color: #222;
+        font-size: 0.875em;
+    }
+    tr:nth-of-type(2n) {
+        background-color: #f9f9f9;
+    }
+}

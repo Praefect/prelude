@@ -95,7 +95,7 @@ module.exports = function(grunt) {
         'tables'
       ]
     },
-    fondation: {
+    foundation: {
       common: [
         'forms'
       ],
@@ -105,10 +105,8 @@ module.exports = function(grunt) {
         'buttons',
         'label',
         'menu',
-        'pager',
         'pagination',
         'progress',
-        'tab',
         'tables'
       ]
     }

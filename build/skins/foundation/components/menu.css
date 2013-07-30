@@ -1,0 +1,30 @@
+.menu {
+  list-style: none;
+}
+.menu a {
+  display: block;
+  text-decoration: none;
+}
+.menu {
+  margin: 0;
+  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
+  margin-left: -22px;
+  margin-left: -1.375rem;
+  padding: 0;
+  list-style: none outside none;
+  overflow: hidden;
+}
+.menu > li {
+  float: left;
+  display: block;
+  margin-left: 22px;
+  margin-left: 1.375rem;
+  list-style: none outside none;
+}
+.menu > li > a {
+  color: #2ba6cb;
+}
+.menu > li > a:hover {
+  color: #2795b6;
+}

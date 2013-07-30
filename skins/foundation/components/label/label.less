@@ -1,0 +1,37 @@
+@import "init.less";
+// ==========================================================================
+
+.label {	
+    position: relative;
+	.inline-block();
+	padding: 0.1875em 0.625em 0.25em;
+	line-height: 1em;
+	color: @label-textColor;
+	font-size: 0.875em;
+	font-weight: bold;	
+	background-color: @label-bgColor;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+}	
+// ==========================================================================
+
+.label_success {
+	color: @label-success-textColor;
+	background-color: @label-success-bgColor;
+}
+.label_alert {
+	color: @label-alert-textColor;
+	background-color: @label-alert-bgColor;
+}
+.label_secondary {
+    color: @label-secondary-textColor;
+	background-color: @label-secondary-bgColor;
+}
+.label_radius {
+	.border-radius(3px);
+}
+.label_round {
+	.border-radius(1000px);
+}
