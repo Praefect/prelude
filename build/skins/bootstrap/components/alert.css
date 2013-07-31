@@ -3,7 +3,6 @@
 .alert-success,
 .alert-info {
   padding: 0.5em 2.1875em 0.5em 0.875em;
-  margin-bottom: 0.5rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -37,7 +36,7 @@
   padding: 0;
   line-height: 1.25em;
   color: #000;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
   border: none;
   background-color: transparent;

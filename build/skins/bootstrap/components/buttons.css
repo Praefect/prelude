@@ -32,7 +32,7 @@
   padding: 0.285em 0.857em;
   line-height: 1.25rem;
   color: #333;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #b3b3b3;
@@ -255,9 +255,9 @@
   border-radius: 4px;
 }
 .button_round {
-  -webkit-border-radius: 1000px 1000px 1000px 1000px;
-  -moz-border-radius: 1000px 1000px 1000px 1000px;
-  border-radius: 1000px 1000px 1000px 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
 }
 .button_block {
   display: block;

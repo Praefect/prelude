@@ -85,7 +85,7 @@ input[type="button"] {
   margin-bottom: 0;
   padding: 0.285em 0.857em;
   color: #333;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   border-width: 1px;
   border-style: solid;
@@ -170,7 +170,7 @@ select {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   padding: 0.285em 0.428em;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
@@ -187,9 +187,9 @@ select {
   transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
 select {
-  width: 220px;
-  height: 30px;
-  line-height: 30px;
+  width: 15.714em;
+  height: 2.142em;
+  line-height: 2.142em;
   border: 1px solid #ccc;
   background-color: #fff;
   -webkit-box-shadow: none;
@@ -198,10 +198,10 @@ select {
 }
 select:focus {
   outline: thin dotted #333333;
-  outline-offset: -2px;
+  outline-offset: -0.142em;
 }
 input[type="file"] {
-  line-height: 30px;
+  line-height: 2.142em;
 }
 select[multiple] {
   height: auto;
@@ -215,8 +215,8 @@ label {
   display: block;
   margin-bottom: 5px;
   margin-bottom: 0.3125rem;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: 1.428em;
+  font-size: 0.875rem;
   font-weight: normal;
   cursor: pointer;
 }
@@ -229,7 +229,7 @@ label {
   height: 1.428em;
   padding: 0.285em 0.357em;
   line-height: 1.428em;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: normal;
   border: 1px solid #ccc;
   background-color: #eee;
