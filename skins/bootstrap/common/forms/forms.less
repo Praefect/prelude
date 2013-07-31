@@ -68,7 +68,7 @@ input[type="button"] {
     margin-bottom: 0;
 	padding: 0.285em 0.857em;
 	color: #333;
-	font-size: 0.875em;
+	font-size: 0.875rem;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     border-width: 1px;
     border-style: solid;
@@ -127,7 +127,7 @@ select {
     line-height: 1.428em;
     .px-to-rem('margin-bottom',10);
 	padding: 0.285em 0.428em;
-    font-size: 0.875em;
+    font-size: 0.875rem;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	border: 1px solid @input-borderColor;
 	.border-radius(4px);
@@ -138,20 +138,20 @@ select {
 }
 
 select {
-    width: 220px;
-    height: 30px;
-    line-height: 30px;
+    width: 15.714em;
+    height: 2.142em;
+    line-height: 2.142em;
     border: 1px solid #ccc;
 	background-color: #fff;
 	.box-shadow(none);
 	&:focus {
 		outline: thin dotted #333333;
-    	outline-offset: -2px;
+    	outline-offset: -0.142em;
 	}
 }
 
 input[type="file"] {
-	line-height: 30px;
+	line-height: 2.142em;
 }
 
 select[multiple] {
@@ -161,15 +161,14 @@ select[multiple] {
 textarea {
 	width: auto;
 	height: auto;
-	// min-height: 60px;
 	min-height: 4em;
 }
 
 label {
 	display: block;
 	.px-to-rem('margin-bottom',5);
-	line-height: 20px;
-	font-size: 14px;
+	line-height: 1.428em;
+	font-size: 0.875rem;
 	font-weight: normal;
 	cursor: pointer;
 }
@@ -184,7 +183,7 @@ label {
 	    height: 1.428em;
 	    padding: 0.285em 0.357em;
 	    line-height: 1.428em;
-	    font-size: 0.875em;
+	    font-size: 0.875rem;
 	    font-weight: normal;
 	    border: 1px solid #ccc;
 		background-color: #eee;
