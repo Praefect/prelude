@@ -43,7 +43,7 @@ ul {
     padding: 0.8125em 1.5em 0.75em;
     line-height: 1em;
     color: @button-textColor;
-    font-size: 1em;
+    font-size: 1rem;
     border-width: 1px;
     border-style: solid;
     border-color: @button-borderColor;
@@ -124,7 +124,7 @@ ul {
     padding: 1.1em 2.2em 1.1625em;
     line-height: 1em;
     color: @button-custom-textColor;
-    font-size: 0.975em;
+    font-size: 0.975rem;
     font-weight: bold;
     border-color: @button-custom-borderColor;
     .border-radius(10px);
@@ -143,7 +143,7 @@ ul {
 //button size
 .button_mini {
     padding: 0.4375em 0.875em 0.5em;
-    font-size: 0.6875em;
+    font-size: 0.6875rem;
 }
 .button_small {
     padding: 0.5625em 1.125em 0.625em;
@@ -151,7 +151,7 @@ ul {
 }
 .button_large {    
     padding: 1em 2em 1.0625em;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 .button_block {
     width: 100%;
@@ -174,7 +174,7 @@ ul {
     .border-radius(@button-borderRadius);
 }
 .button_round {
-    .border-radius(1000px 1000px 1000px 1000px);
+    .border-radius(1000px);
 }
 
 //Button groups
@@ -249,7 +249,7 @@ ul {
         padding-right: 4em;
         &:before {
             right: 1.75em;
-            margin-top: -0.3125em;
+            margin-top: -0.3125em;  // same again
             border-width: 0.625em;
         }
     }

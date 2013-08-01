@@ -81,7 +81,8 @@ select {
     line-height: 2.3125em;
     .px-to-rem('margin-bottom',10);
 	padding: 0.5em 0.5em;
-    font-size: 0.875em;
+    font-size: 0.875rem;
+    color: #000;
     color: rgba(0, 0, 0, 0.75);
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	border: 1px solid @input-borderColor;
@@ -92,20 +93,20 @@ select {
 }
 
 select {
-    width: 220px;
-    height: 30px;
-    line-height: 30px;
+    width: 13.75em;
+    height: 1.875em;
+    line-height: 1.875em;
     border: 1px solid #ccc;
 	background-color: #fff;
 	.box-shadow(none);
 	&:focus {
 		outline: thin dotted #333333;
-    	outline-offset: -2px;
+    	outline-offset: -0.125em;
 	}
 }
 
 input[type="file"] {
-	line-height: 30px;
+	line-height: 1.875em;
 }
 
 select[multiple] {
@@ -122,8 +123,8 @@ textarea {
 label {
 	display: block;
 	.px-to-rem('margin-bottom',5);
-	line-height: 20px;
-	font-size: 14px;
+	line-height: 1.428em;
+	font-size: 0.875rem;
 	font-weight: normal;
 	cursor: pointer;
 }
@@ -140,7 +141,7 @@ label {
 	    line-height: 2.3125em;
 	    padding: 0 1.428em;
 	    color: #333;
-	    font-size: 0.875em;
+	    font-size: 0.875rem;
 	    font-weight: normal;
 	    border: 1px solid #ccc;
 		background-color: #f2f2f2;
@@ -226,36 +227,47 @@ input.form-search {
 	width: 100%;
 }
 .form_mini {
+	width:60px;
     width: 3.75rem; //width:60px;
 }
 .form_small {
+	width: 90px;
     width: 5.625rem; //width: 90px;
 }
 .form_medium {
+	width: 150px;
     width: 9.375rem; //width: 150px;
 }
 .form_large {
+	width: 210px;
     width: 13.125rem; //width: 210px;
 }
 .form_xlarge {
+	width: 270px;
     width: 16.875rem; //width: 270px;
 }
 .form_xxlarge {
+	width: 530px;
     width: 33.125rem; //width: 530px;
 }
 .form_span1 {
+	width: 56px;
 	width: 3.5rem; //width: 56px;
 }
 .form_span2 {
+	width: 156px;
 	width: 9.75rem; //width: 156px;
 }
 .form_span3 {
+	width: 256px;
 	width: 16rem; //width: 256px;
 }
 .form_span4 {
+	width: 356px;
 	width: 22.25rem; //width: 356px;
 }
 .form_span5 {
+	width: 456px;
 	width: 28.5rem; //width: 456px;
 }
 
@@ -323,7 +335,7 @@ input.form-search {
 		    left: 50%;
 		    .px-to-rem('margin-left',-5);
 		    .px-to-rem('margin-top',4);
-    		font-size: 1.142em;
+    		font-size: 0.875rem;
 			color: #222;
     	}
     }
