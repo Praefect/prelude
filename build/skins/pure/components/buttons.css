@@ -32,9 +32,11 @@
 }
 .button {
   padding: 0.5em 1.5em;
+  line-height: 1.25em;
   color: #000;
   color: rgba(0, 0, 0, 0.8);
   font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
   font-size: 1rem;
   background-color: #e6e6e6;
   border: 0 none transparent;
@@ -84,15 +86,19 @@
   color: white;
 }
 .button_mini {
+  font-size: 11.2px;
   font-size: 0.7rem;
 }
 .button_small {
+  font-size: 13.6px;
   font-size: 0.85rem;
 }
 .button_large {
+  font-size: 17.6px;
   font-size: 1.1rem;
 }
 .button_xlarge {
+  font-size: 20px;
   font-size: 1.25rem;
 }
 .button_radius {
@@ -197,13 +203,11 @@
   margin-bottom: -0.25rem;
   margin-top: -4px;
   margin-top: -0.25rem;
-  font-size: 1.33333rem;
+  font-size: 21.33333px;
+  font-size: 1.333333125rem;
   padding-bottom: 0.1875em;
   padding-top: 0.1875em;
   vertical-align: middle;
-}
-.button-icon-large:before {
-  font-size: 1.33333rem;
 }
 .button-icon-large:hover {
   color: #000;

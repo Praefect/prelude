@@ -30,6 +30,7 @@
   padding: 0.5625em 0.625em;
   line-height: 1.125em;
   color: #222;
+  font-size: 14px;
   font-size: 0.875rem;
 }
 .table tr:nth-of-type(2n) {

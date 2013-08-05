@@ -43,6 +43,7 @@ ul {
   padding: 0.8125em 1.5em 0.75em;
   line-height: 1em;
   color: #ffffff;
+  font-size: 16px;
   font-size: 1rem;
   border-width: 1px;
   border-style: solid;
@@ -132,6 +133,7 @@ ul {
   padding: 1.1em 2.2em 1.1625em;
   line-height: 1em;
   color: #333333;
+  font-size: 15.6px;
   font-size: 0.975rem;
   font-weight: bold;
   border-color: #ff61b2;
@@ -159,14 +161,17 @@ ul {
 }
 .button_mini {
   padding: 0.4375em 0.875em 0.5em;
+  font-size: 11px;
   font-size: 0.6875rem;
 }
 .button_small {
   padding: 0.5625em 1.125em 0.625em;
-  font-size: 0.8128rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .button_large {
   padding: 1em 2em 1.0625em;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 .button_block {
@@ -380,7 +385,8 @@ ul {
 }
 .button-dropdown li {
   line-height: 1.125em;
-  font-size: 0.875em;
+  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 .button-dropdown li:hover,
