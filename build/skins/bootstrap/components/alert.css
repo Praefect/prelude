@@ -2,7 +2,10 @@
 .alert_error,
 .alert_success,
 .alert_info {
-  padding: 0.5em 2.1875em 0.5em 0.875em;
+  padding: 1.071em 2.5em 1.071em 1.071em;
+  line-height: 1.42857;
+  font-size: 14px;
+  font-size: 0.875rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -18,25 +21,35 @@
   background-color: #f2dede;
   border-color: #eed3d7;
 }
+.alert_error .alert-link {
+  color: #953b39;
+}
 .alert_success {
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
+}
+.alert_success .alert-link {
+  color: #356635;
 }
 .alert_info {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
+.alert_info .alert-link {
+  color: #2d6987;
+}
 .alert-close {
   position: relative;
   float: right;
-  right: -1.3125em;
-  top: -0.125em;
+  right: -1em;
+  top: -0.092em;
   padding: 0;
-  line-height: 1.25em;
-  color: #000;
-  font-size: 1.25rem;
+  line-height: 1;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  color: inherit;
   font-weight: bold;
   border: none;
   background-color: transparent;
@@ -45,5 +58,5 @@
 }
 .alert-close:hover,
 .alert-close:focus {
-  opacity: 0.4;
+  opacity: 0.5;
 }

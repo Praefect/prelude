@@ -21,7 +21,7 @@
 .pagination li {
   float: left;
   display: inline;
-  line-height: 1.428em;
+  line-height: 1.428;
 }
 .pagination li a {
   display: block;
@@ -51,7 +51,10 @@
   border-radius: 0;
 }
 .pagination li a {
-  padding: 0.285em 0.857em;
+  padding: 0.428em 0.857em;
+  line-height: 1.42857;
+  font-size: 14px;
+  font-size: 0.875rem;
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #ddd;
@@ -90,16 +93,14 @@
   background-color: #f5f5f5;
 }
 .pagination_large li a {
-  font-size: 1.09375rem;
-  padding: 0.628em 1.085em;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 0.55556em 0.88889em;
 }
 .pagination_small li a {
+  font-size: 12px;
   font-size: 0.75rem;
-  padding: 0.168em 0.840em;
-}
-.pagination_mini li a {
-  font-size: 0.65625rem;
-  padding: 0 0.571em;
+  padding: 0.41667em 0.83333em;
 }
 .pagination_centered {
   text-align: center;

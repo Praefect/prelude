@@ -1,15 +1,16 @@
 .label {
   display: inline-block;
-  padding: 0.17em 0.34em;
-  line-height: 1.2em;
+  padding: 0.25em 0.6em;
+  line-height: 1;
   color: #fff;
-  font-size: 0.740rem;
-  font-weight: bold;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  font-size: 75%;
+  font-weight: 500;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
   background-color: #999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
   vertical-align: baseline;
   white-space: nowrap;
 }
@@ -18,17 +19,14 @@
   zoom: 1;
 }
 .label_success {
-  background-color: #468847;
+  background-color: #5cb85c;
 }
 .label_warning {
-  background-color: #f89406;
+  background-color: #f0ad4e;
 }
 .label_important {
-  background-color: #b94a48;
+  background-color: #d9534f;
 }
 .label_info {
-  background-color: #3a87ad;
-}
-.label_inverse {
-  background-color: #333;
+  background-color: #5bc0de;
 }

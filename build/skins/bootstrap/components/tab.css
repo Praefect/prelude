@@ -49,7 +49,8 @@
 .tabs {
   margin: 0;
   padding: 0;
-  line-height: 1.428em;
+  line-height: 1.428;
+  font-size: 14px;
   font-size: 0.875rem;
   border-bottom: 1px solid #ddd;
   list-style: none outside none;
@@ -66,7 +67,6 @@
   margin-right: 0.125rem;
   margin-bottom: -1px;
   padding: 0.571em 0.875em;
-  line-height: 1.428em;
   color: #0088cc;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;

@@ -19,8 +19,9 @@
 .table th,
 .table td {
   padding: 0.571em;
+  font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.428em;
+  line-height: 1.428;
   border-top: 1px solid #dddddd;
 }
 .table th {
@@ -129,4 +130,7 @@
 }
 .table_info {
   background-color: #d9edf7;
+}
+.table_active {
+  background-color: #f9f9f9;
 }

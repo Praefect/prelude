@@ -26,20 +26,20 @@
 
 	li {
 		margin-bottom: -1px;
-		line-height: 1.428em;
-		font-size: 0.875rem;
+		line-height: 1.428;
+		.font-size(14);
 	}
 
 	a {
 		display: block;
-		color: #0088cc;
+		color: #428bca;
 		background-color: transparent;
 	}
 
 	.menu_sub {
 		> a {
-			&:active,
-			&:focus {
+			&:focus,
+			&:active {
 				color: #fff;
 				border-color: #999;
 				background-color: #999;
@@ -49,7 +49,7 @@
 
 
 	li:hover > a {
-		color: #005580;
+		color: #2a6496;
 		background-color: #eee;
 	}
 }
@@ -61,8 +61,7 @@
 		a {
 			.px-to-rem('margin-top',2);
 			.px-to-rem('margin-bottom',2);
-			padding: 0.571em 0.857em;
-			line-height: 1em;
+			padding: 0.714em 1.071em;
 			border: 1px solid transparent;
 			.border-radius(5px);
 		}
@@ -73,7 +72,7 @@
 		a:hover,
 		a:focus {
     		color: #fff;
-			background-color: #0088cc;
+			background-color: #428bca;
 		}
 	}
 }
@@ -84,7 +83,7 @@
 		display: block;
 		a {
 			margin-right: 0;
-			padding: 0.571em 0.857em;
+			padding: 0.714em 1.071em;
 			border: 1px solid #ddd;
 			.border-radius(0);
 		}
@@ -112,8 +111,7 @@
 		a {
 			.px-to-rem('margin-top',2);
 			.px-to-rem('margin-bottom',3);
-			padding: 0.571em 0.857em;
-			line-height: 1em;
+			padding: 0.714em 1.071em;
 			border: 1px solid transparent;
 			.border-radius(5px);
 		}
@@ -123,7 +121,7 @@
 		a:hover,
 		a:focus {
 	    	color: #fff;
-			background-color: #0088cc;
+			background-color: #428bca;
 			cursor: pointer;
 		}
 	}
@@ -132,27 +130,24 @@
 .menu_vertical.menu_list {
 	margin: 0;
 	padding: 0.571em 1.071em;
-	line-height: 1.428em;
-	font-size: 0.875rem;
+	line-height: 1.428;
+	.font-size(14);
 	border: 1px solid #e3e3e3;
 	.border-radius(4px);
 	background-color: #f5f5f5;
 	.inner-shadow(~"0 1px 1px rgba(0, 0, 0, 0.05)");
 	>li {
 		display: block;
-		line-height: 1.428em;
 		a {
 			padding: 0.214em 1.071em;
-			line-height: 1.428em;
-			font-size: 0.875rem;
 			border: none;
 		}
 	}	
 	.menu-header {
 		display: block;
 		padding: 0.272em 1.363em;
-		line-height: 1.818em;
-		font-size: 0.6875rem;
+		line-height: 1.818;
+		.font-size(11);
 		font-weight: bold;
 		color: #999;
 		text-transform: uppercase;
@@ -165,7 +160,7 @@
 		a:hover,
 		a:focus {
 	    	color: #fff;
-			background-color: #0088cc;
+			background-color: #428bca;
 			cursor: pointer;
 		}
 	}
@@ -212,12 +207,10 @@
 }
 .menu_sub-menu {
 	> li {
-		line-height: 1.428em;
-		font-size: 0.875rem;
 		> a {
 			margin: 0;
 			padding: 0.214em 1.428em;
-			line-height: 1.428em;
+			line-height: 1.428;
 			color: #333;
 			.border-radius(0);
 			white-space: nowrap;
@@ -248,7 +241,8 @@
 		a:focus {
     		color: #999;
 			background-color: transparent;
-			cursor: default;
+			cursor: not-allowed;
+			pointer-events: none;
 		}
 	}
 }

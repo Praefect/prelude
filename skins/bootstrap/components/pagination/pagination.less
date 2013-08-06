@@ -10,7 +10,7 @@
     li {
         float: left;
         display: inline;
-        line-height: 1.428em;
+        line-height: 1.428;
         a {
             display: block;
             &:hover {
@@ -36,7 +36,9 @@
         font-size: @pagination-fontSize;
         .border-radius(0);
         a {
-            padding: 0.285em 0.857em;
+            padding: 0.428em 0.857em;
+            line-height: 1.42857;
+            .font-size(14);
             border-width: 1px 1px 1px 0;
             border-style: solid;
             border-color: #ddd;
@@ -80,24 +82,16 @@
 .pagination_large {
     li {
         a {
-            font-size: 1.09375rem;
-            padding: 0.628em 1.085em;
+            .font-size(18);
+            padding: 0.55556em 0.88889em;
         }
     }
 }
 .pagination_small {
     li {
         a {
-            font-size: 0.75rem;
-            padding: 0.168em 0.840em;
-        }
-    }
-}
-.pagination_mini {
-    li {
-        a {
-            font-size: 0.65625rem;
-            padding: 0 0.571em;
+            .font-size(12);
+            padding: 0.41667em 0.83333em;
         }
     }
 }
