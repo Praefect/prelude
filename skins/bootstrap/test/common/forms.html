@@ -52,7 +52,7 @@
                 <li>
                     <label class="disabled" for="disabledField">Disabled Field</label>
                     <input type="text" disabled="disabled" class="form_disabled" placeholder="Disabled" />
-                    <span class="form_disabled form_xlarge">Disabled Field</span>
+                    <span class="form_disabled form_large">Disabled Field</span>
                 </li>
 
                 <li>
@@ -205,6 +205,23 @@
                     </label>
                     <button type="submit" class="form-button_primary form_disabled">Sign in</button>
                 </li>
+                <li>
+                    <div class="form-group">
+                      <span class="form_prepend form_first">@</span>
+                      <input type="text" class="form_last" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" class="form_first">
+                      <span class="form_append form_last">.00</span>
+                    </div>
+
+                    <div class="form-group">
+                      <span class="form_prepend form_first">$</span>
+                      <input type="text" class="form_between">
+                      <span class="form_append form_last">.00</span>
+                    </div>
+                </li>   
             </ul>
         </form>
     </div>

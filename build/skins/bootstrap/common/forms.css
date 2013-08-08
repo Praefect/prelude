@@ -191,7 +191,8 @@ label.form_inline,
 .form_inline > div,
 .form_inline input,
 .form_inline select,
-.form-group input {
+.form-group input,
+.form-group span {
   display: inline-block;
   width: auto;
   margin: 0;
@@ -201,7 +202,8 @@ label.form_inline,
 .ie7 .form_inline > div,
 .ie7 .form_inline input,
 .ie7 .form_inline select,
-.ie7 .form-group input {
+.ie7 .form-group input,
+.ie7 .form-group span {
   display: inline;
   zoom: 1;
 }
@@ -352,6 +354,7 @@ span.form_disabled:active {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+span.form_large,
 select.form_large,
 input.form_large {
   height: 3.111em;
@@ -362,7 +365,7 @@ input.form_large {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-select.form_small,
+span.form_large select.form_small,
 input.form_small {
   height: 2.5em;
   padding: 0.416em 0.833em;
@@ -411,4 +414,41 @@ input.form_small {
   box-shadow: none;
   outline: thin dotted #333;
   outline-offset: -0.142857em;
+}
+.form-group {
+  word-spacing: -1em;
+  vertical-align: top;
+}
+.form_prepend,
+.form_append {
+  padding: 0.571em 0.857em;
+  line-height: 1.42857;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  text-align: center;
+  vertical-align: top;
+}
+.form_prepend.form_first {
+  border-right: none;
+}
+.form_append.form_last {
+  border-left: none;
+}
+.form-group .form_first {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.form-group .form_between {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-group .form_last {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
